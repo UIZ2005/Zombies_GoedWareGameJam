@@ -25,6 +25,10 @@ public class MovePlayer : MonoBehaviour
         if (spriteRenderer == null)
             spriteRenderer = GetComponent<SpriteRenderer>();
     }
+    public void OnInteract(InputValue value)
+    {
+        Debug.Log("Interact detectado. Presionado: " + value.isPressed);
+    }
 
     public void OnMove(InputValue value)
     {
@@ -40,21 +44,22 @@ public class MovePlayer : MonoBehaviour
         {
             if (movement.x < 0)
             {
-                spriteRenderer.flipX = true;
+                //transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+                //spriteRenderer.flipX = true;
             }
             else
             {
-                spriteRenderer.flipX = false;
+                //transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+                //spriteRenderer.flipX = false;
             }
 
             //animator.SetFloat("XInput", movement.x);
             //animator.SetFloat("YInput", movement.y);
         }
     }
-
     public void OnAttack(InputValue value)
     {
-
+        Debug.Log("Interact detectado. Presionado: " + value.isPressed);
     }
 
 
