@@ -13,11 +13,7 @@ public class EnemyHealth : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    public void TakeDamage(
-        int damage,
-        Vector2 knockbackDirection,
-        float knockbackForce
-    )
+    public void TakeDamage(int damage, Vector2 knockbackDirection,float knockbackForce)
     {
         currentHealth -= damage;
 
