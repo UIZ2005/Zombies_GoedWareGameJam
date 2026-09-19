@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -16,6 +18,8 @@ public class PlayerCombat : MonoBehaviour
     [Header("References")]
     [SerializeField] private Transform attackPoint;
     [SerializeField] private LayerMask enemyLayer;
+    [SerializeField] private Dictionary<WeaponType,GameObject> armas = new Dictionary<WeaponType,GameObject>();
+    [SerializeField] private GameObject[] armasGO;
 
     [Header("Player Direction")]
     [SerializeField] private float attackPointDistance = 0.7f;
@@ -47,6 +51,12 @@ public class PlayerCombat : MonoBehaviour
     private Vector2 facingDirection = Vector2.down;
     private float nextAttackTime;
 
+    private void Awake()
+    {
+        armas.Add(WeaponType.Regla, armasGO[0]);
+        armas.Add(WeaponType.Tijeras, armasGO[1]);
+        armas.Add(WeaponType.Compas, armasGO[2]);
+    }
     public void OnInteract(InputValue value)
     {
         Debug.Log("Se presionó Interact (E)");
@@ -106,6 +116,11 @@ public class PlayerCombat : MonoBehaviour
         {
             attackPoint.localPosition =
                 facingDirection * attackPointDistance;
+            // 2. Calcular el ángulo en grados basado en la dirección
+            float angle = Mathf.Atan2(facingDirection.y, facingDirection.x) * Mathf.Rad2Deg;
+
+            // 3. Aplicar la rotación en el eje Z (para 2D)
+            attackPoint.localRotation = Quaternion.Euler(0f, 0f, angle);
         }
     }
 
@@ -115,15 +130,14 @@ public class PlayerCombat : MonoBehaviour
 
     private void TryAttack()
     {
-        Debug.Log("Intenta atacar");
         if (Time.time < nextAttackTime)
             return;
 
+        
         switch (currentWeapon)
         {
             case WeaponType.Regla:
                 nextAttackTime = Time.time + reglaCooldown;
-                Debug.Log("case regla");
                 AttackRegla();
                 break;
 
@@ -137,6 +151,7 @@ public class PlayerCombat : MonoBehaviour
                 AttackCompas();
                 break;
         }
+        StartCoroutine(animacionArma(nextAttackTime));
     }
 
     // =========================================
@@ -299,5 +314,13 @@ public class PlayerCombat : MonoBehaviour
     private void Update()
     {
         UpdateFacingDirection();
+    }
+
+    IEnumerator animacionArma(float timeAction)
+    {
+        armas[currentWeapon].SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        armas[currentWeapon].SetActive(false);
+        yield return null;
     }
 }

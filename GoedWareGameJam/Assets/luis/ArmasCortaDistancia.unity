@@ -206,7 +206,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 30
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8504188199988506754, guid: f2887fec70ce22e479c803d5aae8a0fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -226,8 +226,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46827407}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.30514273, w: -0.9523067}
-  m_LocalPosition: {x: -1.1630201, y: -0.13774, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.3051468, w: 0.9523053}
+  m_LocalPosition: {x: -1.16302, y: -0.13774, z: 0}
   m_LocalScale: {x: 0.78434896, y: 0.78434896, z: 0.78434896}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: 303738601}
   - component: {fileID: 303738607}
   m_Layer: 0
-  m_Name: Square
+  m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -466,11 +466,15 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 8
+  armasGO:
+  - {fileID: 46827407}
+  - {fileID: 763277162}
+  - {fileID: 1673689370}
   attackPointDistance: 1.7
   reglaDamage: 20
   reglaCooldown: 1
-  reglaRange: 1.64
-  reglaArcAngle: 100
+  reglaRange: 1.92
+  reglaArcAngle: 180
   reglaKnockback: 8
   tijerasDamage: 35
   tijerasCooldown: 0.25
@@ -478,7 +482,7 @@ MonoBehaviour:
   tijerasKnockback: 2
   compasDamage: 25
   compasCooldown: 1.4
-  compasRange: 2.5
+  compasRange: 2.84
   compasKnockback: 4
   compasMaxTargets: 3
   showAttackGizmos: 1
@@ -512,8 +516,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 763277163}
   - {fileID: 46827410}
+  - {fileID: 763277163}
   - {fileID: 1673689373}
   m_Father: {fileID: 303738606}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -899,7 +903,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 30
   m_MaskInteraction: 0
   m_Sprite: {fileID: 9139448993979528880, guid: 13eedcafdba9d5e4da343667519d4e80, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1178,7 +1182,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 30
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8907997496642874429, guid: 91a88f2aebc3b294cae7ab559f9d73f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1198,13 +1202,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673689370}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.39659873, w: -0.9179921}
+  m_LocalRotation: {x: 0, y: 0, z: -0.3420201, w: 0.9396927}
   m_LocalPosition: {x: -2.1964202, y: -0.057740003, z: 0}
   m_LocalScale: {x: 0.77853584, y: 0.7647716, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 387464095}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.731}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -40}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
