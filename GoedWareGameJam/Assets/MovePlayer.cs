@@ -25,10 +25,7 @@ public class MovePlayer : MonoBehaviour
         if (spriteRenderer == null)
             spriteRenderer = GetComponent<SpriteRenderer>();
     }
-    public void OnInteract(InputValue value)
-    {
-        Debug.Log("Interact detectado. Presionado: " + value.isPressed);
-    }
+
 
     public void OnMove(InputValue value)
     {
@@ -57,11 +54,6 @@ public class MovePlayer : MonoBehaviour
             //animator.SetFloat("YInput", movement.y);
         }
     }
-    public void OnAttack(InputValue value)
-    {
-        Debug.Log("Interact detectado. Presionado: " + value.isPressed);
-    }
-
 
 
     private void FixedUpdate()

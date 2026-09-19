@@ -115,6 +115,7 @@ public class PlayerCombat : MonoBehaviour
 
     private void TryAttack()
     {
+        Debug.Log("Intenta atacar");
         if (Time.time < nextAttackTime)
             return;
 
@@ -122,6 +123,7 @@ public class PlayerCombat : MonoBehaviour
         {
             case WeaponType.Regla:
                 nextAttackTime = Time.time + reglaCooldown;
+                Debug.Log("case regla");
                 AttackRegla();
                 break;
 
