@@ -4,7 +4,7 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private int maxHealth = 100;
 
-    private int currentHealth;
+    [SerializeField] private int currentHealth;
     private Rigidbody2D rb;
 
     private void Awake()

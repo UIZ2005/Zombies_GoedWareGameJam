@@ -150,7 +150,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""name"": ""Previous"",
                     ""type"": ""Button"",
                     ""id"": ""2776c80d-3c14-4091-8c56-d04ced07a2b0"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -168,6 +168,33 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""name"": ""Sprint"",
                     ""type"": ""Button"",
                     ""id"": ""641cd816-40e6-41b4-8c3d-04687c349290"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SelectExplosive1"",
+                    ""type"": ""Button"",
+                    ""id"": ""a6d85d0c-9a11-465a-a260-0abf810246ec"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SelectExplosive2"",
+                    ""type"": ""Button"",
+                    ""id"": ""263a63cc-4f48-4aac-876d-68a3a03e65e4"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SelectExplosive3"",
+                    ""type"": ""Button"",
+                    ""id"": ""7659fefc-9eac-45cf-a212-a05e88fef59a"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -557,6 +584,39 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""Crouch"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c1d755dd-6103-4bf3-b88c-073bf8304336"",
+                    ""path"": ""<Keyboard>/7"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SelectExplosive1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""39c31df3-a33b-4b4b-a9b8-10daa17875d6"",
+                    ""path"": ""<Keyboard>/8"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SelectExplosive2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f6771d1b-b269-4ab5-b8bb-a45b6da7c0c7"",
+                    ""path"": ""<Keyboard>/9"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SelectExplosive3"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1153,6 +1213,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Player_Previous = m_Player.FindAction("Previous", throwIfNotFound: true);
         m_Player_Next = m_Player.FindAction("Next", throwIfNotFound: true);
         m_Player_Sprint = m_Player.FindAction("Sprint", throwIfNotFound: true);
+        m_Player_SelectExplosive1 = m_Player.FindAction("SelectExplosive1", throwIfNotFound: true);
+        m_Player_SelectExplosive2 = m_Player.FindAction("SelectExplosive2", throwIfNotFound: true);
+        m_Player_SelectExplosive3 = m_Player.FindAction("SelectExplosive3", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1255,6 +1318,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Previous;
     private readonly InputAction m_Player_Next;
     private readonly InputAction m_Player_Sprint;
+    private readonly InputAction m_Player_SelectExplosive1;
+    private readonly InputAction m_Player_SelectExplosive2;
+    private readonly InputAction m_Player_SelectExplosive3;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -1302,6 +1368,18 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/Sprint".
         /// </summary>
         public InputAction @Sprint => m_Wrapper.m_Player_Sprint;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/SelectExplosive1".
+        /// </summary>
+        public InputAction @SelectExplosive1 => m_Wrapper.m_Player_SelectExplosive1;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/SelectExplosive2".
+        /// </summary>
+        public InputAction @SelectExplosive2 => m_Wrapper.m_Player_SelectExplosive2;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/SelectExplosive3".
+        /// </summary>
+        public InputAction @SelectExplosive3 => m_Wrapper.m_Player_SelectExplosive3;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1355,6 +1433,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Sprint.started += instance.OnSprint;
             @Sprint.performed += instance.OnSprint;
             @Sprint.canceled += instance.OnSprint;
+            @SelectExplosive1.started += instance.OnSelectExplosive1;
+            @SelectExplosive1.performed += instance.OnSelectExplosive1;
+            @SelectExplosive1.canceled += instance.OnSelectExplosive1;
+            @SelectExplosive2.started += instance.OnSelectExplosive2;
+            @SelectExplosive2.performed += instance.OnSelectExplosive2;
+            @SelectExplosive2.canceled += instance.OnSelectExplosive2;
+            @SelectExplosive3.started += instance.OnSelectExplosive3;
+            @SelectExplosive3.performed += instance.OnSelectExplosive3;
+            @SelectExplosive3.canceled += instance.OnSelectExplosive3;
         }
 
         /// <summary>
@@ -1393,6 +1480,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Sprint.started -= instance.OnSprint;
             @Sprint.performed -= instance.OnSprint;
             @Sprint.canceled -= instance.OnSprint;
+            @SelectExplosive1.started -= instance.OnSelectExplosive1;
+            @SelectExplosive1.performed -= instance.OnSelectExplosive1;
+            @SelectExplosive1.canceled -= instance.OnSelectExplosive1;
+            @SelectExplosive2.started -= instance.OnSelectExplosive2;
+            @SelectExplosive2.performed -= instance.OnSelectExplosive2;
+            @SelectExplosive2.canceled -= instance.OnSelectExplosive2;
+            @SelectExplosive3.started -= instance.OnSelectExplosive3;
+            @SelectExplosive3.performed -= instance.OnSelectExplosive3;
+            @SelectExplosive3.canceled -= instance.OnSelectExplosive3;
         }
 
         /// <summary>
@@ -1756,6 +1852,27 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnSprint(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "SelectExplosive1" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSelectExplosive1(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "SelectExplosive2" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSelectExplosive2(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "SelectExplosive3" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSelectExplosive3(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.
