@@ -7,14 +7,14 @@ public class BotellaGaseosa : MonoBehaviour
     [SerializeField] private float velocidadLanzamiento = 15f;
 
     [Header("Configuración de Daño y Nube")]
-    [SerializeField] private int dañoPorTick = 10;
-    [SerializeField] private float knockback =1f; 
+    [SerializeField] private int dañoPorTick = 15;
+    [SerializeField] private float knockback = 2f; 
     [SerializeField] private float tiempoVidaNube = 6f; 
     [SerializeField] private float tiempoFade = 2f;
     [SerializeField] private float tiempoEntreDaños = 0.5f;
     
     [Header("Detección de Enemigos")]
-    [SerializeField] private LayerMask enemyLayer;
+    [SerializeField] private LayerMask enemyLayer; 
 
     private Vector3 posicionObjetivo;
     private bool estaEnVuelo = true;
@@ -57,14 +57,20 @@ public class BotellaGaseosa : MonoBehaviour
     private void Detonar()
     {
         estaEnVuelo = false;
+        
+        // 1. Disparamos la animación de explosión
         anim.SetTrigger("Explotar"); 
         
-        // Iniciamos el ciclo de vida de la nube y el daño continuo
+        // 2. Duplicamos la escala de la botella/nube
+        transform.localScale = transform.localScale * 6f;
+        
+        // 3. Iniciamos el ciclo de vida de la nube y el daño continuo
         StartCoroutine(RutinaDañoContinuo());
         StartCoroutine(RutinaNubeToxica());
+
+        
     }
 
-    // NUEVO: Corrutina que aplica daño de área por pulsos (sin depender de OnTriggerStay2D)
     private IEnumerator RutinaDañoContinuo()
     {
         float tiempoSolido = tiempoVidaNube - tiempoFade;
@@ -73,8 +79,8 @@ public class BotellaGaseosa : MonoBehaviour
         // Mientras la nube no empiece a desaparecer
         while (tiempoTranscurrido < tiempoSolido)
         {
-            // Escanea a todos los enemigos dentro del radio del CircleCollider2D
-            Collider2D[] enemigosEnArea = Physics2D.OverlapCircleAll(transform.position, areaColision.radius, enemyLayer);
+            // Nota: Al duplicar la escala del transform, el radio visual del CircleCollider2D también se duplica automáticamente en Unity.
+            Collider2D[] enemigosEnArea = Physics2D.OverlapCircleAll(transform.position, areaColision.radius * transform.localScale.x, enemyLayer);
 
             foreach (Collider2D enemigo in enemigosEnArea)
             {
@@ -117,7 +123,8 @@ public class BotellaGaseosa : MonoBehaviour
         if (areaColision != null)
         {
             Gizmos.color = Color.green;
-            Gizmos.DrawWireSphere(transform.position, areaColision.radius);
+            // Dibujamos el Gizmo considerando la escala para que coincida con lo que detectará OverlapCircleAll
+            Gizmos.DrawWireSphere(transform.position, areaColision.radius * transform.localScale.x);
         }
     }
 }
