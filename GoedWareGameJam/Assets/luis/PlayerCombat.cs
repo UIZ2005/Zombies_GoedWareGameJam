@@ -14,6 +14,7 @@ public class PlayerCombat : MonoBehaviour
 
     [Header("Weapon Selection")]
     [SerializeField] private WeaponType currentWeapon = WeaponType.Regla;
+    public int Nweapon;
 
     [Header("References")]
     [SerializeField] private Transform attackPoint;
@@ -70,19 +71,25 @@ public class PlayerCombat : MonoBehaviour
     // SELECCIÓN DE ARMAS
     // =========================================
 
-    private void UpdateWeaponSelection()
+    public void OnCrouch()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        UpdateWeaponSelection(Nweapon);
+    }
+    private void UpdateWeaponSelection(int n)
+    {
+        if (n == 0) return;
+
+        if (n==1)
         {
             ChangeWeapon(WeaponType.Regla);
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (n == 2)
         {
             ChangeWeapon(WeaponType.Tijeras);
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (n == 3)
         {
             ChangeWeapon(WeaponType.Compas);
         }
