@@ -16,6 +16,8 @@ public class PlayerExplosives : MonoBehaviour
     [Header("References")]
     [SerializeField] private Transform throwPoint;
     [SerializeField] private GameObject botellaPrefab;
+    [SerializeField] private GameObject mochilaPrefab; // NUEVO: Referencia a la mochila
+    [SerializeField] private GameObject sopaPrefab;
 
     [Header("Botella de Gaseosa")]
     [SerializeField] private float botellaCooldown = 5f;
@@ -74,11 +76,11 @@ public class PlayerExplosives : MonoBehaviour
                 break;
             case ExplosiveType.Mochila:
                 nextThrowTime = Time.time + mochilaCooldown;
-                Debug.Log("Lanzando Mochila...");
+                ThrowMochila(); // NUEVO: Llamamos a la función de la mochila
                 break;
             case ExplosiveType.Sopa:
                 nextThrowTime = Time.time + sopaCooldown;
-                Debug.Log("Lanzando Sopa...");
+                ThrowSopa();
                 break;
         }
     }
@@ -86,23 +88,39 @@ public class PlayerExplosives : MonoBehaviour
     // =========================================
     // BOTELLA DE GASEOSA
     // =========================================
-
     private void ThrowBotella()
     {
         if (botellaPrefab == null || throwPoint == null) return;
-
-        // Leer la posición exacta del ratón en pantalla y convertirla al mundo 2D
         Vector2 mouseScreenPosition = Mouse.current.position.ReadValue();
         Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(mouseScreenPosition);
-        mouseWorldPosition.z = 0f; // Asegurar que esté en el plano 2D
-
-        // Instanciar y lanzar
+        mouseWorldPosition.z = 0f;
         GameObject botellaInstance = Instantiate(botellaPrefab, throwPoint.position, Quaternion.identity);
         BotellaGaseosa botellaScript = botellaInstance.GetComponent<BotellaGaseosa>();
+        if (botellaScript != null) botellaScript.InicializarLanzamiento(mouseWorldPosition);
+    }
+
+    // =========================================
+    // MOCHILA BOMBA (MINA TERRESTRE)
+    // =========================================
+    private void ThrowMochila()
+    {
+        if (mochilaPrefab == null || throwPoint == null) return;
         
-        if (botellaScript != null)
-        {
-            botellaScript.InicializarLanzamiento(mouseWorldPosition);
-        }
+        // A diferencia de la botella, la mochila solo se suelta en la posición actual del jugador
+        Instantiate(mochilaPrefab, throwPoint.position, Quaternion.identity);
+    }
+
+    // =========================================
+    // SOPA HIRVIENDO
+    // =========================================
+    private void ThrowSopa()
+    {
+        if (sopaPrefab == null || throwPoint == null) return;
+        Vector2 mouseScreenPosition = Mouse.current.position.ReadValue();
+        Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(mouseScreenPosition);
+        mouseWorldPosition.z = 0f;
+        GameObject sopaInstance = Instantiate(sopaPrefab, throwPoint.position, Quaternion.identity);
+        SopaHirviendo sopaScript = sopaInstance.GetComponent<SopaHirviendo>();
+        if (sopaScript != null) sopaScript.InicializarLanzamiento(mouseWorldPosition);
     }
 }

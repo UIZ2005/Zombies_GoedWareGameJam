@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 303738603}
   - component: {fileID: 303738602}
   - component: {fileID: 303738601}
-  - component: {fileID: 303738607}
   - component: {fileID: 303738608}
   m_Layer: 0
   m_Name: Square
@@ -336,39 +335,6 @@ Transform:
   - {fileID: 387464095}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &303738607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 303738600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 771d33c0f50cfc64c975f98d65f5bdd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
-  currentWeapon: 2
-  attackPoint: {fileID: 387464095}
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  attackPointDistance: 1.2
-  reglaDamage: 20
-  reglaCooldown: 1
-  reglaRange: 1.5
-  reglaArcAngle: 100
-  reglaKnockback: 8
-  tijerasDamage: 35
-  tijerasCooldown: 0.25
-  tijerasRange: 0.8
-  tijerasKnockback: 2
-  compasDamage: 25
-  compasCooldown: 1.4
-  compasRange: 2.5
-  compasKnockback: 4
-  compasMaxTargets: 3
-  showAttackGizmos: 1
 --- !u!114 &303738608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,6 +350,8 @@ MonoBehaviour:
   currentExplosive: 0
   throwPoint: {fileID: 387464095}
   botellaPrefab: {fileID: 7359482877324116842, guid: f22ffd917d878f542afda6e26bc31d6c, type: 3}
+  mochilaPrefab: {fileID: 6159088100996049199, guid: 2e71ae32d25de124abd0b240dba70f96, type: 3}
+  sopaPrefab: {fileID: 5032482079138258578, guid: 4f9429426a7096448b906de543068316, type: 3}
   botellaCooldown: 5
   mochilaCooldown: 3
   sopaCooldown: 6
