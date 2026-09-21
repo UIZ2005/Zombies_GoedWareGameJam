@@ -250,7 +250,7 @@ GameObject:
   - component: {fileID: 303738607}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1094,7 +1094,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61e76fa7c23afea4b83a175c9a34cc4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  speed: 2
+  stoppingDistance: 1.1
+  knockbackDuration: 0.6
   maxHealth: 100
+  currentHealth: 0
 --- !u!1 &1673689370
 GameObject:
   m_ObjectHideFlags: 0
