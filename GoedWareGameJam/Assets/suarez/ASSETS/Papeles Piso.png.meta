@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 3bc3338ff2f5cc14eb54233821eb370b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2861137392572362546
+    second: Papeles Piso_0
+  - first:
+      213: -6908354178039138891
+    second: Papeles Piso_1
+  - first:
+      213: 3065724486792271439
+    second: Papeles Piso_2
+  - first:
+      213: -9203981094190008536
+    second: Papeles Piso_3
+  - first:
+      213: 2102279082606717950
+    second: Papeles Piso_4
+  - first:
+      213: -7766045207228748168
+    second: Papeles Piso_5
+  - first:
+      213: -5557023472207070631
+    second: Papeles Piso_6
+  - first:
+      213: -7077624059849516065
+    second: Papeles Piso_7
+  - first:
+      213: 8472137987608942344
+    second: Papeles Piso_8
+  - first:
+      213: -7929217313979023015
+    second: Papeles Piso_9
+  - first:
+      213: -8163170352331448179
+    second: Papeles Piso_10
+  - first:
+      213: 8148379461875442994
+    second: Papeles Piso_11
+  - first:
+      213: -2132692077580995998
+    second: Papeles Piso_12
+  - first:
+      213: -4295490644564917368
+    second: Papeles Piso_13
+  - first:
+      213: 4718178251181859085
+    second: Papeles Piso_14
+  - first:
+      213: 3464151328023636464
+    second: Papeles Piso_15
+  - first:
+      213: -1068545220439031823
+    second: Papeles Piso_16
+  - first:
+      213: 3043754328891684610
+    second: Papeles Piso_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Papeles Piso_0
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 2283
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec0132e43b23b48d0800000000000000
+      internalID: -2861137392572362546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papeles Piso_1
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 2061
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b534632a789020a0800000000000000
+      internalID: -6908354178039138891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papeles Piso_2
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1869
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4658768d24ab8a20800000000000000
+      internalID: 3065724486792271439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papeles Piso_3
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 1583
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 827b469a5f3e44080800000000000000
+      internalID: -9203981094190008536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papeles Piso_4
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 1583
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efbe181ffabcc2d10800000000000000
+      internalID: 2102279082606717950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papeles Piso_5
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 1276
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87e6181c707793490800000000000000
+      internalID: -7766045207228748168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papeles Piso_6
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 1239
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95af69a289c71e2b0800000000000000
+      internalID: -5557023472207070631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papeles Piso_7
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 1032
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb59ea9a6a37cd90800000000000000
+      internalID: -7077624059849516065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papeles Piso_8
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 944
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8071687cc94139570800000000000000
+      internalID: 8472137987608942344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papeles Piso_9
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 849
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 951476d1dd2c5f190800000000000000
+      internalID: -7929217313979023015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papeles Piso_10
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 878
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d80a84c90d796be80800000000000000
+      internalID: -8163170352331448179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papeles Piso_11
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 526
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 235ac28d2fbd41170800000000000000
+      internalID: 8148379461875442994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papeles Piso_12
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 451
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 262be7cdad72762e0800000000000000
+      internalID: -2132692077580995998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papeles Piso_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 291
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883c1ba640a5364c0800000000000000
+      internalID: -4295490644564917368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papeles Piso_14
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 238
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d012ba81f165a7140800000000000000
+      internalID: 4718178251181859085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papeles Piso_15
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 184
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f9eb0b6743231030800000000000000
+      internalID: 3464151328023636464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papeles Piso_16
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 0
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ff3a4d88c3cb21f0800000000000000
+      internalID: -1068545220439031823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papeles Piso_17
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 12
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20775258f669d3a20800000000000000
+      internalID: 3043754328891684610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Papeles Piso_0: -2861137392572362546
+      Papeles Piso_1: -6908354178039138891
+      Papeles Piso_10: -8163170352331448179
+      Papeles Piso_11: 8148379461875442994
+      Papeles Piso_12: -2132692077580995998
+      Papeles Piso_13: -4295490644564917368
+      Papeles Piso_14: 4718178251181859085
+      Papeles Piso_15: 3464151328023636464
+      Papeles Piso_16: -1068545220439031823
+      Papeles Piso_17: 3043754328891684610
+      Papeles Piso_2: 3065724486792271439
+      Papeles Piso_3: -9203981094190008536
+      Papeles Piso_4: 2102279082606717950
+      Papeles Piso_5: -7766045207228748168
+      Papeles Piso_6: -5557023472207070631
+      Papeles Piso_7: -7077624059849516065
+      Papeles Piso_8: 8472137987608942344
+      Papeles Piso_9: -7929217313979023015
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
