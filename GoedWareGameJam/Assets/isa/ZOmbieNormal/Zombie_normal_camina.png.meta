@@ -1,0 +1,509 @@
+fileFormatVersion: 2
+guid: 6252922f377843542bd5f75dce01639a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4383282610867576930
+    second: Zombie_normal_camina_0
+  - first:
+      213: -2379000739240941025
+    second: Zombie_normal_camina_1
+  - first:
+      213: 4567481758999023439
+    second: Zombie_normal_camina_2
+  - first:
+      213: 3314194785882689991
+    second: Zombie_normal_camina_3
+  - first:
+      213: 6804926078239011362
+    second: Zombie_normal_camina_4
+  - first:
+      213: -6241066458744141791
+    second: Zombie_normal_camina_5
+  - first:
+      213: -7757276570472886178
+    second: Zombie_normal_camina_6
+  - first:
+      213: 6735496306098258109
+    second: Zombie_normal_camina_7
+  - first:
+      213: 423598018970865587
+    second: Zombie_normal_camina_8
+  - first:
+      213: 4501650600571744267
+    second: Zombie_normal_camina_9
+  - first:
+      213: 7906926202005573122
+    second: Zombie_normal_camina_10
+  - first:
+      213: -2210078547182550001
+    second: Zombie_normal_camina_11
+  - first:
+      213: 8464763062142982892
+    second: Zombie_normal_camina_12
+  - first:
+      213: -6169202598082901279
+    second: Zombie_normal_camina_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Zombie_normal_camina_0
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1116
+        width: 366
+        height: 598
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f571560b37b23c0800000000000000
+      internalID: -4383282610867576930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_normal_camina_1
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 1113
+        width: 363
+        height: 601
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ae621ae671cfed0800000000000000
+      internalID: -2379000739240941025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_normal_camina_2
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 1110
+        width: 369
+        height: 604
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4f8633d574f26f30800000000000000
+      internalID: 4567481758999023439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_normal_camina_3
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 1107
+        width: 365
+        height: 607
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c15df039926efd20800000000000000
+      internalID: 3314194785882689991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_normal_camina_4
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 1104
+        width: 363
+        height: 610
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2227a30d634ff6e50800000000000000
+      internalID: 6804926078239011362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_normal_camina_5
+      rect:
+        serializedVersion: 2
+        x: 2194
+        y: 1096
+        width: 367
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12843f25f174369a0800000000000000
+      internalID: -6241066458744141791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_normal_camina_6
+      rect:
+        serializedVersion: 2
+        x: 2566
+        y: 1099
+        width: 365
+        height: 615
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50d0881f0e985490800000000000000
+      internalID: -7757276570472886178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_normal_camina_7
+      rect:
+        serializedVersion: 2
+        x: 2933
+        y: 1096
+        width: 366
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db041f6443a497d50800000000000000
+      internalID: 6735496306098258109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_normal_camina_8
+      rect:
+        serializedVersion: 2
+        x: 3299
+        y: 1099
+        width: 360
+        height: 615
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bf4158672ce0e500800000000000000
+      internalID: 423598018970865587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_normal_camina_9
+      rect:
+        serializedVersion: 2
+        x: 3663
+        y: 1102
+        width: 362
+        height: 615
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b00b006de53197e30800000000000000
+      internalID: 4501650600571744267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_normal_camina_10
+      rect:
+        serializedVersion: 2
+        x: 4081
+        y: 1104
+        width: 369
+        height: 610
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e45cfec7b0bbd60800000000000000
+      internalID: 7906926202005573122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_normal_camina_11
+      rect:
+        serializedVersion: 2
+        x: 4506
+        y: 1107
+        width: 369
+        height: 607
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f04097555493451e0800000000000000
+      internalID: -2210078547182550001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_normal_camina_12
+      rect:
+        serializedVersion: 2
+        x: 4907
+        y: 1107
+        width: 369
+        height: 604
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cea51e22821e87570800000000000000
+      internalID: 8464763062142982892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_normal_camina_13
+      rect:
+        serializedVersion: 2
+        x: 5303
+        y: 1113
+        width: 363
+        height: 601
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea0ad14ce6926aa0800000000000000
+      internalID: -6169202598082901279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3556538b5f5c4b54e8de817b0318a158
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Zombie_normal_camina_0: -4383282610867576930
+      Zombie_normal_camina_1: -2379000739240941025
+      Zombie_normal_camina_10: 7906926202005573122
+      Zombie_normal_camina_11: -2210078547182550001
+      Zombie_normal_camina_12: 8464763062142982892
+      Zombie_normal_camina_13: -6169202598082901279
+      Zombie_normal_camina_2: 4567481758999023439
+      Zombie_normal_camina_3: 3314194785882689991
+      Zombie_normal_camina_4: 6804926078239011362
+      Zombie_normal_camina_5: -6241066458744141791
+      Zombie_normal_camina_6: -7757276570472886178
+      Zombie_normal_camina_7: 6735496306098258109
+      Zombie_normal_camina_8: 423598018970865587
+      Zombie_normal_camina_9: 4501650600571744267
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
