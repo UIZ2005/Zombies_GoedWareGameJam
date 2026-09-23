@@ -1,0 +1,665 @@
+fileFormatVersion: 2
+guid: dd0132dd428ea4e4785aee6cb49e837f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7256234819632220490
+    second: zombie-gordo-camina_0
+  - first:
+      213: 8170619101130631339
+    second: zombie-gordo-camina_1
+  - first:
+      213: -3910456700428822740
+    second: zombie-gordo-camina_2
+  - first:
+      213: 3188123128355070688
+    second: zombie-gordo-camina_3
+  - first:
+      213: 5078678258160907809
+    second: zombie-gordo-camina_4
+  - first:
+      213: 7450259730345481356
+    second: zombie-gordo-camina_5
+  - first:
+      213: -1110164858972810814
+    second: zombie-gordo-camina_6
+  - first:
+      213: 9113194742374589694
+    second: zombie-gordo-camina_7
+  - first:
+      213: 6466369837770070589
+    second: zombie-gordo-camina_8
+  - first:
+      213: -349576296225113509
+    second: zombie-gordo-camina_9
+  - first:
+      213: -8603862095941509063
+    second: zombie-gordo-camina_10
+  - first:
+      213: -2269745930637168523
+    second: zombie-gordo-camina_11
+  - first:
+      213: -5139772892550834919
+    second: zombie-gordo-camina_12
+  - first:
+      213: 3020336401226864315
+    second: zombie-gordo-camina_13
+  - first:
+      213: -4759490989175252073
+    second: zombie-gordo-camina_14
+  - first:
+      213: 6482917329187502507
+    second: zombie-gordo-camina_15
+  - first:
+      213: 6744938485687506381
+    second: zombie-gordo-camina_16
+  - first:
+      213: 9151785067678554967
+    second: zombie-gordo-camina_17
+  - first:
+      213: 7564531517993834033
+    second: zombie-gordo-camina_18
+  - first:
+      213: -8295316904803185461
+    second: zombie-gordo-camina_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: zombie-gordo-camina_0
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 2087
+        width: 691
+        height: 829
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a49cffe8f1353b460800000000000000
+      internalID: 7256234819632220490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-gordo-camina_1
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 2087
+        width: 674
+        height: 829
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba8a9ed58ced36170800000000000000
+      internalID: 8170619101130631339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-gordo-camina_2
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 2087
+        width: 650
+        height: 838
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c27d46579544bb9c0800000000000000
+      internalID: -3910456700428822740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-gordo-camina_3
+      rect:
+        serializedVersion: 2
+        x: 2351
+        y: 2087
+        width: 618
+        height: 838
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2afc5081d7e3c20800000000000000
+      internalID: 3188123128355070688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-gordo-camina_4
+      rect:
+        serializedVersion: 2
+        x: 3019
+        y: 2090
+        width: 624
+        height: 835
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1263e22c7f61b7640800000000000000
+      internalID: 5078678258160907809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-gordo-camina_5
+      rect:
+        serializedVersion: 2
+        x: 3688
+        y: 2090
+        width: 626
+        height: 844
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c84d3a760c3a46760800000000000000
+      internalID: 7450259730345481356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-gordo-camina_6
+      rect:
+        serializedVersion: 2
+        x: 4333
+        y: 2070
+        width: 623
+        height: 858
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c1ddc251f6e790f0800000000000000
+      internalID: -1110164858972810814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-gordo-camina_7
+      rect:
+        serializedVersion: 2
+        x: 4979
+        y: 2073
+        width: 624
+        height: 855
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef4e13c9552987e70800000000000000
+      internalID: 9113194742374589694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-gordo-camina_8
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1144
+        width: 622
+        height: 871
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3ad59e6b192db950800000000000000
+      internalID: 6466369837770070589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-gordo-camina_9
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 1144
+        width: 623
+        height: 870
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5afa91f53e062bf0800000000000000
+      internalID: -349576296225113509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-gordo-camina_10
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 1141
+        width: 618
+        height: 874
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93065fa4201f89880800000000000000
+      internalID: -8603862095941509063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-gordo-camina_11
+      rect:
+        serializedVersion: 2
+        x: 2281
+        y: 1141
+        width: 621
+        height: 876
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 570bbf90a1e3080e0800000000000000
+      internalID: -2269745930637168523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-gordo-camina_12
+      rect:
+        serializedVersion: 2
+        x: 2934
+        y: 1156
+        width: 618
+        height: 860
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 915535139cbdba8b0800000000000000
+      internalID: -5139772892550834919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-gordo-camina_13
+      rect:
+        serializedVersion: 2
+        x: 3558
+        y: 1147
+        width: 618
+        height: 868
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb61f4954f36ae920800000000000000
+      internalID: 3020336401226864315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-gordo-camina_14
+      rect:
+        serializedVersion: 2
+        x: 4192
+        y: 1147
+        width: 625
+        height: 867
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b59868924e2fdb0800000000000000
+      internalID: -4759490989175252073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-gordo-camina_15
+      rect:
+        serializedVersion: 2
+        x: 4856
+        y: 1147
+        width: 618
+        height: 868
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba9f17286f2f7f950800000000000000
+      internalID: 6482917329187502507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-gordo-camina_16
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 195
+        width: 621
+        height: 867
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc5d34701d5da9d50800000000000000
+      internalID: 6744938485687506381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-gordo-camina_17
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 198
+        width: 617
+        height: 864
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75b54b3e70ca10f70800000000000000
+      internalID: 9151785067678554967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-gordo-camina_18
+      rect:
+        serializedVersion: 2
+        x: 1586
+        y: 192
+        width: 621
+        height: 870
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 136d446465d9af860800000000000000
+      internalID: 7564531517993834033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-gordo-camina_19
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 192
+        width: 621
+        height: 870
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bccc9edb93d11ec80800000000000000
+      internalID: -8295316904803185461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2dcbc14ac0c3e734895ad444e44504e5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      zombie-gordo-camina_0: 7256234819632220490
+      zombie-gordo-camina_1: 8170619101130631339
+      zombie-gordo-camina_10: -8603862095941509063
+      zombie-gordo-camina_11: -2269745930637168523
+      zombie-gordo-camina_12: -5139772892550834919
+      zombie-gordo-camina_13: 3020336401226864315
+      zombie-gordo-camina_14: -4759490989175252073
+      zombie-gordo-camina_15: 6482917329187502507
+      zombie-gordo-camina_16: 6744938485687506381
+      zombie-gordo-camina_17: 9151785067678554967
+      zombie-gordo-camina_18: 7564531517993834033
+      zombie-gordo-camina_19: -8295316904803185461
+      zombie-gordo-camina_2: -3910456700428822740
+      zombie-gordo-camina_3: 3188123128355070688
+      zombie-gordo-camina_4: 5078678258160907809
+      zombie-gordo-camina_5: 7450259730345481356
+      zombie-gordo-camina_6: -1110164858972810814
+      zombie-gordo-camina_7: 9113194742374589694
+      zombie-gordo-camina_8: 6466369837770070589
+      zombie-gordo-camina_9: -349576296225113509
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
