@@ -113,6 +113,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "ExplosiveAttack",
+                    "type": "Button",
+                    "id": "8956b678-447e-4997-8bfd-c712ea5c5709",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -531,6 +540,28 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "SelectExplosive3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "99273596-491e-4087-83d6-5afb220eb674",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ExplosiveAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "aea352f0-3beb-4cf6-b734-84c125cd6d89",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ExplosiveAttack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

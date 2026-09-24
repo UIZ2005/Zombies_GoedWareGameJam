@@ -199,6 +199,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ExplosiveAttack"",
+                    ""type"": ""Button"",
+                    ""id"": ""8956b678-447e-4997-8bfd-c712ea5c5709"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -617,6 +626,28 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""SelectExplosive3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""99273596-491e-4087-83d6-5afb220eb674"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ExplosiveAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""aea352f0-3beb-4cf6-b734-84c125cd6d89"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ExplosiveAttack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1216,6 +1247,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Player_SelectExplosive1 = m_Player.FindAction("SelectExplosive1", throwIfNotFound: true);
         m_Player_SelectExplosive2 = m_Player.FindAction("SelectExplosive2", throwIfNotFound: true);
         m_Player_SelectExplosive3 = m_Player.FindAction("SelectExplosive3", throwIfNotFound: true);
+        m_Player_ExplosiveAttack = m_Player.FindAction("ExplosiveAttack", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1321,6 +1353,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_SelectExplosive1;
     private readonly InputAction m_Player_SelectExplosive2;
     private readonly InputAction m_Player_SelectExplosive3;
+    private readonly InputAction m_Player_ExplosiveAttack;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -1380,6 +1413,10 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/SelectExplosive3".
         /// </summary>
         public InputAction @SelectExplosive3 => m_Wrapper.m_Player_SelectExplosive3;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/ExplosiveAttack".
+        /// </summary>
+        public InputAction @ExplosiveAttack => m_Wrapper.m_Player_ExplosiveAttack;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1442,6 +1479,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @SelectExplosive3.started += instance.OnSelectExplosive3;
             @SelectExplosive3.performed += instance.OnSelectExplosive3;
             @SelectExplosive3.canceled += instance.OnSelectExplosive3;
+            @ExplosiveAttack.started += instance.OnExplosiveAttack;
+            @ExplosiveAttack.performed += instance.OnExplosiveAttack;
+            @ExplosiveAttack.canceled += instance.OnExplosiveAttack;
         }
 
         /// <summary>
@@ -1489,6 +1529,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @SelectExplosive3.started -= instance.OnSelectExplosive3;
             @SelectExplosive3.performed -= instance.OnSelectExplosive3;
             @SelectExplosive3.canceled -= instance.OnSelectExplosive3;
+            @ExplosiveAttack.started -= instance.OnExplosiveAttack;
+            @ExplosiveAttack.performed -= instance.OnExplosiveAttack;
+            @ExplosiveAttack.canceled -= instance.OnExplosiveAttack;
         }
 
         /// <summary>
@@ -1873,6 +1916,13 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnSelectExplosive3(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "ExplosiveAttack" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnExplosiveAttack(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.
