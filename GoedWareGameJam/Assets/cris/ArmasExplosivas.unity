@@ -943,7 +943,7 @@ GameObject:
   - component: {fileID: 692773820}
   - component: {fileID: 692773822}
   m_Layer: 0
-  m_Name: Pop (2)
+  m_Name: Pop Olla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2216,6 +2216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   speed: 2
   stoppingDistance: 1.1
+  maxDistanceToNavMesh: 2
   knockbackDuration: 0.3
   maxHealth: 100
   currentHealth: 0
