@@ -5,18 +5,22 @@ public class PlayerExplosives : MonoBehaviour
 {
     public enum ExplosiveType
     {
+        Ninguno, // Estado inicial por si no tiene armas explosivas
         Botella,
         Mochila,
         Sopa
     }
 
     [Header("Explosive Selection")]
-    [SerializeField] private ExplosiveType currentExplosive = ExplosiveType.Botella;
+    [SerializeField] private ExplosiveType currentExplosive = ExplosiveType.Ninguno;
+    
+    // Variable que recibe el número desde el script popsNear
+    public int NExplosive; 
 
     [Header("References")]
     [SerializeField] private Transform throwPoint;
     [SerializeField] private GameObject botellaPrefab;
-    [SerializeField] private GameObject mochilaPrefab; // NUEVO: Referencia a la mochila
+    [SerializeField] private GameObject mochilaPrefab;
     [SerializeField] private GameObject sopaPrefab;
 
     [Header("Botella de Gaseosa")]
@@ -31,41 +35,44 @@ public class PlayerExplosives : MonoBehaviour
     private float nextThrowTime;
 
     // =========================================
-    // NEW INPUT SYSTEM: ACCIONES
+    // RECOGER ARMA (Conectado a la tecla 'C' o tu botón de Crouch)
     // =========================================
-
-    public void OnSelectExplosive1(InputValue value)
+    public void OnCrouch()
     {
-        if (value.isPressed) ChangeExplosive(ExplosiveType.Botella);
+        UpdateExplosiveSelection(NExplosive);
     }
 
-    public void OnSelectExplosive2(InputValue value)
+    private void UpdateExplosiveSelection(int n)
     {
-        if (value.isPressed) ChangeExplosive(ExplosiveType.Mochila);
-    }
+        if (n == 0) return; // Si no hay nada cerca, no hace nada
 
-    public void OnSelectExplosive3(InputValue value)
-    {
-        if (value.isPressed) ChangeExplosive(ExplosiveType.Sopa);
-    }
-
-    public void OnAttack(InputValue value)
-    {
-        if (value.isPressed) TryThrow();
+        if (n == 1) ChangeExplosive(ExplosiveType.Botella);
+        if (n == 2) ChangeExplosive(ExplosiveType.Mochila);
+        if (n == 3) ChangeExplosive(ExplosiveType.Sopa);
     }
 
     private void ChangeExplosive(ExplosiveType newExplosive)
     {
         currentExplosive = newExplosive;
-        Debug.Log("Explosivo seleccionado: " + currentExplosive);
+        Debug.Log("Explosivo recogido y equipado: " + currentExplosive);
+    }
+
+    // =========================================
+    // ATACAR (Conectado a la tecla 'R')
+    // =========================================
+    public void OnExplosiveAttack(InputValue value)
+    {
+        if (value.isPressed) TryThrow();
     }
 
     // =========================================
     // LANZAMIENTO GENERAL
     // =========================================
-
     private void TryThrow()
     {
+        // Si no tiene ningún explosivo recogido, no puede lanzar
+        if (currentExplosive == ExplosiveType.Ninguno) return;
+
         if (Time.time < nextThrowTime) return;
 
         switch (currentExplosive)
@@ -76,7 +83,7 @@ public class PlayerExplosives : MonoBehaviour
                 break;
             case ExplosiveType.Mochila:
                 nextThrowTime = Time.time + mochilaCooldown;
-                ThrowMochila(); // NUEVO: Llamamos a la función de la mochila
+                ThrowMochila(); 
                 break;
             case ExplosiveType.Sopa:
                 nextThrowTime = Time.time + sopaCooldown;
@@ -105,8 +112,6 @@ public class PlayerExplosives : MonoBehaviour
     private void ThrowMochila()
     {
         if (mochilaPrefab == null || throwPoint == null) return;
-        
-        // A diferencia de la botella, la mochila solo se suelta en la posición actual del jugador
         Instantiate(mochilaPrefab, throwPoint.position, Quaternion.identity);
     }
 
