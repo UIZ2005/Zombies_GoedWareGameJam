@@ -21,6 +21,10 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private int maxHealth = 100;
     [SerializeField] private int currentHealth;
 
+    [Header("Animación")]
+    [SerializeField] private Animator animator;
+    [SerializeField] private SpriteRenderer spriteRenderer;
+
     private Rigidbody2D rb;
     private bool isDead = false;
 
@@ -35,6 +39,12 @@ public class EnemyHealth : MonoBehaviour
         
         agent.speed = speed;
         agent.stoppingDistance = stoppingDistance;
+
+        if (animator == null)
+            animator = GetComponent<Animator>();
+
+        if (spriteRenderer == null)
+            spriteRenderer = GetComponent<SpriteRenderer>();
 
         // Lo hacemos inmune a empujones de caminar para evitar el tartamudeo
         rb.bodyType = RigidbodyType2D.Kinematic;
@@ -54,26 +64,101 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    private void Update() 
+    private void Update()
     {
-        if (isDead || isKnockedBack || player == null)
+        if (isDead || player == null)
             return;
 
-        // Si fue empujado fuera del mapa azul, intenta reconectarse
         if (!agent.isOnNavMesh)
         {
             UnityEngine.AI.NavMeshHit hit;
-            if (UnityEngine.AI.NavMesh.SamplePosition(transform.position, out hit, maxDistanceToNavMesh, UnityEngine.AI.NavMesh.AllAreas))
+
+            if (UnityEngine.AI.NavMesh.SamplePosition(
+                transform.position,
+                out hit,
+                maxDistanceToNavMesh,
+                UnityEngine.AI.NavMesh.AllAreas))
             {
-                agent.Warp(hit.position); // Vuelve a anclarse al mapa
+                agent.Warp(hit.position);
             }
-            return; // Espera a estar seguro en el mapa antes de moverse
+
+            UpdateAnimation(Vector2.zero);
+            return;
         }
 
-        // Persecución inteligente estándar
+        if (isKnockedBack)
+        {
+            UpdateAnimation(Vector2.zero);
+            return;
+        }
+
         agent.SetDestination(player.position);
+
+        // La dirección/velocidad ahora viene del NavMeshAgent
+        UpdateAnimation(agent.velocity);
     }
 
+    private void UpdateAnimation(Vector2 velocity)
+    {
+        if (animator == null || spriteRenderer == null)
+            return;
+
+        // -----------------------------------------
+        // QUIETO
+        // -----------------------------------------
+
+        if (velocity.sqrMagnitude < 0.01f)
+        {
+            animator.SetBool("walk", false);
+            animator.SetBool("walkUp", false);
+
+            return;
+        }
+
+        // -----------------------------------------
+        // CAMINANDO
+        // -----------------------------------------
+
+        animator.SetBool("walk", true);
+
+        // -----------------------------------------
+        // HORIZONTAL
+        // -----------------------------------------
+
+        if (Mathf.Abs(velocity.x) > Mathf.Abs(velocity.y))
+        {
+            animator.SetBool("walkUp", false);
+
+            // Derecha
+            if (velocity.x > 0)
+            {
+                spriteRenderer.flipX = false;
+            }
+            // Izquierda
+            else
+            {
+                spriteRenderer.flipX = true;
+            }
+        }
+
+        // -----------------------------------------
+        // VERTICAL
+        // -----------------------------------------
+
+        else
+        {
+            // Hacia arriba
+            if (velocity.y > 0)
+            {
+                animator.SetBool("walkUp", true);
+            }
+            // Hacia abajo
+            else
+            {
+                animator.SetBool("walkUp", false);
+            }
+        }
+    }
     public void TakeDamage(int damage, Vector2 knockbackDirection, float knockbackForce)
     {
         if (isDead) return;
@@ -123,6 +208,15 @@ public class EnemyHealth : MonoBehaviour
         if (agent != null) agent.isStopped = true;
         rb.linearVelocity = Vector2.zero;
 
+        StartCoroutine(dieAnimation());
+    }
+
+    IEnumerator dieAnimation()
+    {
+
+        animator.SetBool("die", true);
+        yield return new WaitForSeconds(1f);
         Destroy(gameObject);
+        yield return null;
     }
 }

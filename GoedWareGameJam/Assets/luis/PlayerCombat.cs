@@ -60,7 +60,6 @@ public class PlayerCombat : MonoBehaviour
     }
     public void OnInteract(InputValue value)
     {
-        Debug.Log("Se presionó Interact (E)");
 
         if (value.isPressed)
         {
