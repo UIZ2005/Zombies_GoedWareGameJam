@@ -3,11 +3,13 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [Header("Persecución")]
+    [Header("PersecuciÃ³n")]
     [SerializeField] private float speed = 2f;
     [SerializeField] private float stoppingDistance = 1.1f;
+    [SerializeField] private float maxDistanceToNavMesh = 2f; // Radio para buscar el mapa perdido
 
     private Transform player;
+    private UnityEngine.AI.NavMeshAgent agent; 
 
     [Header("Knockback")]
     [SerializeField] private float knockbackDuration = 0.3f;
@@ -26,12 +28,21 @@ public class EnemyHealth : MonoBehaviour
     {
         currentHealth = maxHealth;
         rb = GetComponent<Rigidbody2D>();
+        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
+        
+        agent.speed = speed;
+        agent.stoppingDistance = stoppingDistance;
+
+        // Lo hacemos inmune a empujones de caminar para evitar el tartamudeo
+        rb.bodyType = RigidbodyType2D.Kinematic;
     }
 
     private void Start()
     {
-        GameObject playerObject =
-            GameObject.FindGameObjectWithTag("Player");
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
 
         if (playerObject != null)
         {
@@ -39,94 +50,68 @@ public class EnemyHealth : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning(
-                "No se encontró un objeto con el tag Player."
-            );
+            Debug.LogWarning("No se encontrÃ³ un objeto con el tag Player.");
         }
     }
 
-    private void FixedUpdate()
+    private void Update() 
     {
-        if (isDead || isKnockedBack)
+        if (isDead || isKnockedBack || player == null)
             return;
 
-        if (player == null)
+        // Si fue empujado fuera del mapa azul, intenta reconectarse
+        if (!agent.isOnNavMesh)
         {
-            rb.linearVelocity = Vector2.zero;
-            return;
+            UnityEngine.AI.NavMeshHit hit;
+            if (UnityEngine.AI.NavMesh.SamplePosition(transform.position, out hit, maxDistanceToNavMesh, UnityEngine.AI.NavMesh.AllAreas))
+            {
+                agent.Warp(hit.position); // Vuelve a anclarse al mapa
+            }
+            return; // Espera a estar seguro en el mapa antes de moverse
         }
 
-        float distance = Vector2.Distance(
-            transform.position,
-            player.position
-        );
-
-        if (distance > stoppingDistance)
-        {
-            Vector2 direction =
-                (player.position - transform.position).normalized;
-
-            rb.linearVelocity = direction * speed;
-        }
-        else
-        {
-            rb.linearVelocity = Vector2.zero;
-        }
+        // PersecuciÃ³n inteligente estÃ¡ndar
+        agent.SetDestination(player.position);
     }
 
-    public void TakeDamage(
-        int damage,
-        Vector2 knockbackDirection,
-        float knockbackForce
-    )
+    public void TakeDamage(int damage, Vector2 knockbackDirection, float knockbackForce)
     {
-        if (isDead)
-            return;
+        if (isDead) return;
 
         currentHealth -= damage;
 
-        // Aplicar knockback
         if (rb != null && knockbackForce > 0)
         {
-            if (knockbackCoroutine != null)
-            {
-                StopCoroutine(knockbackCoroutine);
-            }
-
-            knockbackCoroutine = StartCoroutine(
-                ApplyKnockback(knockbackDirection, knockbackForce)
-            );
+            if (knockbackCoroutine != null) StopCoroutine(knockbackCoroutine);
+            knockbackCoroutine = StartCoroutine(ApplyKnockback(knockbackDirection, knockbackForce));
         }
 
-        // Comprobar vida
         if (currentHealth <= 0)
         {
             Die();
         }
     }
 
-    private IEnumerator ApplyKnockback(
-        Vector2 direction,
-        float force
-    )
+    private IEnumerator ApplyKnockback(Vector2 direction, float force)
     {
         isKnockedBack = true;
-
-        // Detener el movimiento de persecución
+        
+        agent.isStopped = true; 
+        
+        // Se vuelve dinÃ¡mico SOLO durante el impacto para poder salir volando
+        rb.bodyType = RigidbodyType2D.Dynamic;
         rb.linearVelocity = Vector2.zero;
+        
+        rb.AddForce(direction.normalized * force, ForceMode2D.Impulse);
 
-        // Aplicar empuje
-        rb.AddForce(
-            direction.normalized * force,
-            ForceMode2D.Impulse
-        );
-
-        // Esperar mientras dura el knockback
         yield return new WaitForSeconds(knockbackDuration);
 
-        // Detener el desplazamiento restante
         rb.linearVelocity = Vector2.zero;
-
+        
+        // Vuelve a su estado estable para seguir persiguiendo
+        rb.bodyType = RigidbodyType2D.Kinematic;
+        
+        agent.isStopped = false; 
         isKnockedBack = false;
         knockbackCoroutine = null;
     }
@@ -134,7 +119,8 @@ public class EnemyHealth : MonoBehaviour
     private void Die()
     {
         isDead = true;
-
+        
+        if (agent != null) agent.isStopped = true;
         rb.linearVelocity = Vector2.zero;
 
         Destroy(gameObject);
