@@ -452,6 +452,7 @@ GameObject:
   - component: {fileID: 5784689643162067051}
   - component: {fileID: 4504396057537512722}
   - component: {fileID: 3736005652243433072}
+  - component: {fileID: 3799362048365854665}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -474,6 +475,7 @@ Transform:
   m_Children:
   - {fileID: 4436113238351351160}
   - {fileID: 6326770605415951621}
+  - {fileID: 2318941648043685599}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &35057837554743861
@@ -713,6 +715,37 @@ MonoBehaviour:
   botellaCooldown: 5
   mochilaCooldown: 3
   sopaCooldown: 6
+--- !u!114 &3799362048365854665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8785261450085968739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d04371710465b3f48a2c9ba97a429744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerRangedCombat
+  currentWeapon: 0
+  firePoint: {fileID: 2318941648043685599}
+  penProjectile: {fileID: 2621739172146825757, guid: 8fd4a471f7cb11042ada4669e38046ed, type: 3}
+  penDamage: 80
+  penSpeed: 25
+  penCooldown: 1.2
+  rubberProjectile: {fileID: 0}
+  rubberDamage: 10
+  rubberSpeed: 12
+  rubberCooldown: 0.08
+  slowChance: 0.3
+  slowDuration: 1
+  slowMultiplier: 0.5
+  bookProjectile: {fileID: 0}
+  bookDamage: 100
+  bookSpeed: 8
+  bookCooldown: 0.8
+  bookSpreadAngle: 25
+  bookLifetime: 0.5
 --- !u!1 &8878150418247233090
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,3 +803,34 @@ MonoBehaviour:
   extraDistance: 0.13
   maxEnemies: 10
   showSpawnGizmo: 1
+--- !u!1 &9206719107614721333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2318941648043685599}
+  m_Layer: 0
+  m_Name: firePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2318941648043685599
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9206719107614721333}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.19, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6583075836114973314}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

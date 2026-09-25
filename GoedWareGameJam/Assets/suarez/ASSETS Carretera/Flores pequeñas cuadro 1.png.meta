@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 208fd3862e8e19544b0c8d137c061ef8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3602577708450385776
+    second: "Flores peque\xF1as cuadro 1_0"
+  - first:
+      213: -3912863225272988722
+    second: "Flores peque\xF1as cuadro 1_1"
+  - first:
+      213: 6017691612408575450
+    second: "Flores peque\xF1as cuadro 1_2"
+  - first:
+      213: 3633206178762045757
+    second: "Flores peque\xF1as cuadro 1_3"
+  - first:
+      213: 1784691990836578945
+    second: "Flores peque\xF1as cuadro 1_4"
+  - first:
+      213: -9045898212953747499
+    second: "Flores peque\xF1as cuadro 1_5"
+  - first:
+      213: -2966921370827456096
+    second: "Flores peque\xF1as cuadro 1_6"
+  - first:
+      213: -5988072794923670203
+    second: "Flores peque\xF1as cuadro 1_7"
+  - first:
+      213: -4029568566647927681
+    second: "Flores peque\xF1as cuadro 1_8"
+  - first:
+      213: -3981856018981902355
+    second: "Flores peque\xF1as cuadro 1_9"
+  - first:
+      213: 7974710496352742184
+    second: "Flores peque\xF1as cuadro 1_10"
+  - first:
+      213: -5230331308598354689
+    second: "Flores peque\xF1as cuadro 1_11"
+  - first:
+      213: -4493619817293655967
+    second: "Flores peque\xF1as cuadro 1_12"
+  - first:
+      213: 1651957442300718921
+    second: "Flores peque\xF1as cuadro 1_13"
+  - first:
+      213: 8496877647991371984
+    second: "Flores peque\xF1as cuadro 1_14"
+  - first:
+      213: 1435653989382553240
+    second: "Flores peque\xF1as cuadro 1_15"
+  - first:
+      213: -6098702348655047076
+    second: "Flores peque\xF1as cuadro 1_16"
+  - first:
+      213: 2988038251029795314
+    second: "Flores peque\xF1as cuadro 1_17"
+  - first:
+      213: -4210333954509578105
+    second: "Flores peque\xF1as cuadro 1_18"
+  - first:
+      213: -765294203930284709
+    second: "Flores peque\xF1as cuadro 1_19"
+  - first:
+      213: -5720660798310477721
+    second: "Flores peque\xF1as cuadro 1_20"
+  - first:
+      213: 2041589431820416271
+    second: "Flores peque\xF1as cuadro 1_21"
+  - first:
+      213: 3175038259719044671
+    second: "Flores peque\xF1as cuadro 1_22"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_0"
+      rect:
+        serializedVersion: 2
+        x: 11512
+        y: 4031
+        width: 82
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 090f21459a2110ec0800000000000000
+      internalID: -3602577708450385776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_1"
+      rect:
+        serializedVersion: 2
+        x: 14296
+        y: 4066
+        width: 82
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb0aeab0a7b2b9c0800000000000000
+      internalID: -3912863225272988722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_2"
+      rect:
+        serializedVersion: 2
+        x: 32687
+        y: 3874
+        width: 81
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad5f57d63a2238350800000000000000
+      internalID: 6017691612408575450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_3"
+      rect:
+        serializedVersion: 2
+        x: 25204
+        y: 3774
+        width: 82
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d39bdd025cdbb6230800000000000000
+      internalID: 3633206178762045757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_4"
+      rect:
+        serializedVersion: 2
+        x: 6741
+        y: 3465
+        width: 82
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18a8c43f8ef74c810800000000000000
+      internalID: 1784691990836578945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_5"
+      rect:
+        serializedVersion: 2
+        x: 6863
+        y: 3434
+        width: 81
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df0d86a083867280800000000000000
+      internalID: -9045898212953747499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_6"
+      rect:
+        serializedVersion: 2
+        x: 22509
+        y: 3392
+        width: 82
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1805f8bb063d6d0800000000000000
+      internalID: -2966921370827456096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_7"
+      rect:
+        serializedVersion: 2
+        x: 30754
+        y: 3301
+        width: 82
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 545e469e48716eca0800000000000000
+      internalID: -5988072794923670203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_8"
+      rect:
+        serializedVersion: 2
+        x: 20348
+        y: 3232
+        width: 82
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ccedafcb81418c0800000000000000
+      internalID: -4029568566647927681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_9"
+      rect:
+        serializedVersion: 2
+        x: 3546
+        y: 2924
+        width: 82
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de725d92c0b9db8c0800000000000000
+      internalID: -3981856018981902355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_10"
+      rect:
+        serializedVersion: 2
+        x: 10346
+        y: 2820
+        width: 82
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82b2fa1d1fcdbae60800000000000000
+      internalID: 7974710496352742184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_11"
+      rect:
+        serializedVersion: 2
+        x: 5695
+        y: 2469
+        width: 82
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc1465e2612a67b0800000000000000
+      internalID: -5230331308598354689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_12"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2050
+        width: 81
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1605e8a959473a1c0800000000000000
+      internalID: -4493619817293655967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_13"
+      rect:
+        serializedVersion: 2
+        x: 29009
+        y: 2002
+        width: 82
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94fa5649a8eece610800000000000000
+      internalID: 1651957442300718921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_14"
+      rect:
+        serializedVersion: 2
+        x: 32119
+        y: 1972
+        width: 82
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d87b74d339fae570800000000000000
+      internalID: 8496877647991371984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_15"
+      rect:
+        serializedVersion: 2
+        x: 24965
+        y: 1811
+        width: 82
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ef48962b77ce310800000000000000
+      internalID: 1435653989382553240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_16"
+      rect:
+        serializedVersion: 2
+        x: 12251
+        y: 1334
+        width: 82
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5e4395b68e0d5ba0800000000000000
+      internalID: -6098702348655047076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_17"
+      rect:
+        serializedVersion: 2
+        x: 20937
+        y: 1001
+        width: 82
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f119ef35f4a77920800000000000000
+      internalID: 2988038251029795314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_18"
+      rect:
+        serializedVersion: 2
+        x: 23751
+        y: 994
+        width: 82
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 780e0bf5393e195c0800000000000000
+      internalID: -4210333954509578105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_19"
+      rect:
+        serializedVersion: 2
+        x: 4376
+        y: 844
+        width: 82
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5de11ae9f02165f0800000000000000
+      internalID: -765294203930284709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_20"
+      rect:
+        serializedVersion: 2
+        x: 9817
+        y: 340
+        width: 82
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 760933430512c90b0800000000000000
+      internalID: -5720660798310477721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_21"
+      rect:
+        serializedVersion: 2
+        x: 27404
+        y: 399
+        width: 82
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f05f8dc75ce255c10800000000000000
+      internalID: 2041589431820416271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Flores peque\xF1as cuadro 1_22"
+      rect:
+        serializedVersion: 2
+        x: 22209
+        y: 0
+        width: 82
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3ef3d2a970001c20800000000000000
+      internalID: 3175038259719044671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Flores peque\xF1as cuadro 1_0": -3602577708450385776
+      "Flores peque\xF1as cuadro 1_1": -3912863225272988722
+      "Flores peque\xF1as cuadro 1_10": 7974710496352742184
+      "Flores peque\xF1as cuadro 1_11": -5230331308598354689
+      "Flores peque\xF1as cuadro 1_12": -4493619817293655967
+      "Flores peque\xF1as cuadro 1_13": 1651957442300718921
+      "Flores peque\xF1as cuadro 1_14": 8496877647991371984
+      "Flores peque\xF1as cuadro 1_15": 1435653989382553240
+      "Flores peque\xF1as cuadro 1_16": -6098702348655047076
+      "Flores peque\xF1as cuadro 1_17": 2988038251029795314
+      "Flores peque\xF1as cuadro 1_18": -4210333954509578105
+      "Flores peque\xF1as cuadro 1_19": -765294203930284709
+      "Flores peque\xF1as cuadro 1_2": 6017691612408575450
+      "Flores peque\xF1as cuadro 1_20": -5720660798310477721
+      "Flores peque\xF1as cuadro 1_21": 2041589431820416271
+      "Flores peque\xF1as cuadro 1_22": 3175038259719044671
+      "Flores peque\xF1as cuadro 1_3": 3633206178762045757
+      "Flores peque\xF1as cuadro 1_4": 1784691990836578945
+      "Flores peque\xF1as cuadro 1_5": -9045898212953747499
+      "Flores peque\xF1as cuadro 1_6": -2966921370827456096
+      "Flores peque\xF1as cuadro 1_7": -5988072794923670203
+      "Flores peque\xF1as cuadro 1_8": -4029568566647927681
+      "Flores peque\xF1as cuadro 1_9": -3981856018981902355
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
