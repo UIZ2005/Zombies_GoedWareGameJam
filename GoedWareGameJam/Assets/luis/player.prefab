@@ -761,8 +761,11 @@ MonoBehaviour:
   playerCamera: {fileID: 0}
   enemyTypes:
   - enemyName: Normal
-    prefab: {fileID: 2699678230776885350, guid: 9ba8df496de180942a1f9e9a5fdbcbbf, type: 3}
-    spawnWeight: 100
+    prefab: {fileID: 2439081331048917214, guid: e125f36bb5ef3944c8260c57cb7db096, type: 3}
+    spawnWeight: 70
+  - enemyName: Gordo
+    prefab: {fileID: 2877055668201033091, guid: 0bb1d2e84c8c02145bbea2e10c3410d7, type: 3}
+    spawnWeight: 30
   spawnInterval: 2
   extraDistance: 0.13
   maxEnemies: 10
