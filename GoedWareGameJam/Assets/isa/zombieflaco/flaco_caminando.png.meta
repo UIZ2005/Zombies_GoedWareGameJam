@@ -1,0 +1,371 @@
+fileFormatVersion: 2
+guid: 9e3d581591e2d7143b33ab2f1c79b0dd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5079749755435367319
+    second: flaco_caminando_0
+  - first:
+      213: 442254300568860290
+    second: flaco_caminando_1
+  - first:
+      213: -3443107025859214839
+    second: flaco_caminando_2
+  - first:
+      213: 8788815351710612888
+    second: flaco_caminando_3
+  - first:
+      213: 9154621153886117868
+    second: flaco_caminando_4
+  - first:
+      213: 3518360602829840209
+    second: flaco_caminando_5
+  - first:
+      213: 5975423629349264667
+    second: flaco_caminando_6
+  - first:
+      213: 1003137461233207092
+    second: flaco_caminando_7
+  - first:
+      213: 391593328042898579
+    second: flaco_caminando_8
+  - first:
+      213: 2260214382267795063
+    second: flaco_caminando_9
+  - first:
+      213: 4065704534714589869
+    second: flaco_caminando_10
+  - first:
+      213: 2243183928740714914
+    second: flaco_caminando_11
+  - first:
+      213: -238183602499048563
+    second: flaco_caminando_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: flaco_caminando_0
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1675
+        width: 620
+        height: 1305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 964c567d28a1189b0800000000000000
+      internalID: -5079749755435367319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flaco_caminando_1
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1675
+        width: 643
+        height: 1303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 286bbc571f3332600800000000000000
+      internalID: 442254300568860290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flaco_caminando_2
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 1673
+        width: 650
+        height: 1297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90282000760a730d0800000000000000
+      internalID: -3443107025859214839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flaco_caminando_3
+      rect:
+        serializedVersion: 2
+        x: 2618
+        y: 1673
+        width: 658
+        height: 1297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89df53b4ff428f970800000000000000
+      internalID: 8788815351710612888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flaco_caminando_4
+      rect:
+        serializedVersion: 2
+        x: 3438
+        y: 1662
+        width: 669
+        height: 1290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cef98aaaf6fbb0f70800000000000000
+      internalID: 9154621153886117868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flaco_caminando_6
+      rect:
+        serializedVersion: 2
+        x: 4245
+        y: 1669
+        width: 681
+        height: 1272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d96d9b128fce250800000000000000
+      internalID: 5975423629349264667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flaco_caminando_7
+      rect:
+        serializedVersion: 2
+        x: 5103
+        y: 1666
+        width: 619
+        height: 1281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43741b5c43cdbed00800000000000000
+      internalID: 1003137461233207092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flaco_caminando_12
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 186
+        width: 669
+        height: 1293
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8ba8b5864dc1bcf0800000000000000
+      internalID: -238183602499048563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: efb4fd024faa89143bb89116ad84e645
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      flaco_caminando_0: -5079749755435367319
+      flaco_caminando_1: 442254300568860290
+      flaco_caminando_10: 4065704534714589869
+      flaco_caminando_11: 2243183928740714914
+      flaco_caminando_12: -238183602499048563
+      flaco_caminando_2: -3443107025859214839
+      flaco_caminando_3: 8788815351710612888
+      flaco_caminando_4: 9154621153886117868
+      flaco_caminando_5: 3518360602829840209
+      flaco_caminando_6: 5975423629349264667
+      flaco_caminando_7: 1003137461233207092
+      flaco_caminando_8: 391593328042898579
+      flaco_caminando_9: 2260214382267795063
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
