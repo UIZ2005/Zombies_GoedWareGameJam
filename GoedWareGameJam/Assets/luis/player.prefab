@@ -952,16 +952,16 @@ MonoBehaviour:
   - {fileID: 6057792454989933379}
   - {fileID: 2486259416783337967}
   attackPointDistance: 1.7
-  reglaDamage: 20
+  reglaDamage: 15
   reglaCooldown: 1
   reglaRange: 1.92
   reglaArcAngle: 180
   reglaKnockback: 8
-  tijerasDamage: 35
+  tijerasDamage: 10
   tijerasCooldown: 0.25
   tijerasRange: 1.39
   tijerasKnockback: 2
-  compasDamage: 25
+  compasDamage: 20
   compasCooldown: 1.4
   compasRange: 2.84
   compasKnockback: 4
@@ -1008,12 +1008,12 @@ MonoBehaviour:
   Nweapon: 0
   firePoint: {fileID: 2318941648043685599}
   penProjectile: {fileID: 2621739172146825757, guid: 8fd4a471f7cb11042ada4669e38046ed, type: 3}
-  penDamage: 80
+  penDamage: 15
   penSpeed: 25
-  penCooldown: 1.2
+  penCooldown: 0.5
   rubberProjectile: {fileID: 5638808032691472593, guid: 7bc47bcf5593edb4f8bb821cadbb41e0, type: 3}
-  rubberDamage: 10
-  rubberSpeed: 12
+  rubberDamage: 7
+  rubberSpeed: 20
   rubberCooldown: 0.08
   slowChance: 0.3
   slowDuration: 1
@@ -1024,7 +1024,7 @@ MonoBehaviour:
   - {fileID: 6279623088014857912, guid: 06db998c468f3bf4ebe28e7a223e2692, type: 3}
   bookDamage: 100
   bookSpeed: 8
-  bookCooldown: 0.8
+  bookCooldown: 2.5
   bookSpreadAngle: 25
   bookLifetime: 0.5
 --- !u!1 &8878150418247233090
@@ -1076,10 +1076,13 @@ MonoBehaviour:
   enemyTypes:
   - enemyName: Normal
     prefab: {fileID: 2439081331048917214, guid: e125f36bb5ef3944c8260c57cb7db096, type: 3}
-    spawnWeight: 70
+    spawnWeight: 50
   - enemyName: Gordo
     prefab: {fileID: 2877055668201033091, guid: 0bb1d2e84c8c02145bbea2e10c3410d7, type: 3}
-    spawnWeight: 30
+    spawnWeight: 25
+  - enemyName: Flaco
+    prefab: {fileID: 8747490719384673963, guid: 9302386bed190504ca518362af34b0e4, type: 3}
+    spawnWeight: 50
   spawnInterval: 2
   extraDistance: 0.13
   maxEnemies: 10

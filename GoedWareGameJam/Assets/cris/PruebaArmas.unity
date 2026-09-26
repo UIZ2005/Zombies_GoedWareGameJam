@@ -2970,11 +2970,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 3.2}
   m_SizeDelta: {x: 6, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1190015548 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 373456626948940114, guid: 65b57b76d573d1a46a40438d81547bce, type: 3}
-  m_PrefabInstance: {fileID: 2042432487}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1272514932
 GameObject:
   m_ObjectHideFlags: 0
@@ -3351,11 +3346,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &1391059705 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7898392647463853972, guid: 65b57b76d573d1a46a40438d81547bce, type: 3}
-  m_PrefabInstance: {fileID: 2042432487}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1409449858
 GameObject:
   m_ObjectHideFlags: 0
@@ -3998,11 +3988,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 3.2}
   m_SizeDelta: {x: 6, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1619471025 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1680596018865180541, guid: 65b57b76d573d1a46a40438d81547bce, type: 3}
-  m_PrefabInstance: {fileID: 2042432487}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1629470962
 GameObject:
   m_ObjectHideFlags: 0
@@ -5163,26 +5148,6 @@ PrefabInstance:
       propertyPath: rubberDamage
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 3799362048365854665, guid: 65b57b76d573d1a46a40438d81547bce, type: 3}
-      propertyPath: currentWeapon
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3799362048365854665, guid: 65b57b76d573d1a46a40438d81547bce, type: 3}
-      propertyPath: currentWeapon_GO.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3799362048365854665, guid: 65b57b76d573d1a46a40438d81547bce, type: 3}
-      propertyPath: 'currentWeapon_GO.Array.data[0]'
-      value: 
-      objectReference: {fileID: 1190015548}
-    - target: {fileID: 3799362048365854665, guid: 65b57b76d573d1a46a40438d81547bce, type: 3}
-      propertyPath: 'currentWeapon_GO.Array.data[1]'
-      value: 
-      objectReference: {fileID: 1391059705}
-    - target: {fileID: 3799362048365854665, guid: 65b57b76d573d1a46a40438d81547bce, type: 3}
-      propertyPath: 'currentWeapon_GO.Array.data[2]'
-      value: 
-      objectReference: {fileID: 1619471025}
     - target: {fileID: 4504396057537512722, guid: 65b57b76d573d1a46a40438d81547bce, type: 3}
       propertyPath: reglaDamage
       value: 15
