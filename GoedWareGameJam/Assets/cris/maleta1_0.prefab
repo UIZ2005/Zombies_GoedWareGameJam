@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb57d61b41ad6744aaf7d61d16f27056, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MochilaBomba
-  "da\xF1oExplosion": 50
+  "da\xF1oExplosion": 100
   knockback: 12
   tiempoDetonacion: 2
   tiempoDestruccion: 0.5

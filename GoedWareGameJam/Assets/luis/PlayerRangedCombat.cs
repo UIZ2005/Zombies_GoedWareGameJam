@@ -16,7 +16,7 @@ public class PlayerRangedCombat : MonoBehaviour
     public int Nweapon;
 
 
-    [Header("Dirección")]
+    [Header("Direcciï¿½n")]
     [SerializeField] private Transform firePoint;
 
     private Vector2 facingDirection = Vector2.down;
@@ -24,9 +24,9 @@ public class PlayerRangedCombat : MonoBehaviour
     private float nextFireTime = 0f;
 
 
-    [Header("Cerbatana de Bolígrafo")]
+    [Header("Cerbatana de Bolï¿½grafo")]
     [SerializeField] private GameObject penProjectile;
-    [SerializeField] private float penDamage = 80f;
+    [SerializeField] private float penDamage = 10f;
     [SerializeField] private float penSpeed = 25f;
     [SerializeField] private float penCooldown = 1.2f;
 
@@ -99,17 +99,17 @@ public class PlayerRangedCombat : MonoBehaviour
     }
     private void UpdateFacingDirection()
     {
-        // Obtener posición del mouse en pantalla
+        // Obtener posiciï¿½n del mouse en pantalla
         Vector2 mouseScreenPosition =
             Mouse.current.position.ReadValue();
 
-        // Convertir la posición del mouse a coordenadas del mundo
+        // Convertir la posiciï¿½n del mouse a coordenadas del mundo
         Vector3 mouseWorldPosition =
             Camera.main.ScreenToWorldPoint(mouseScreenPosition);
 
         mouseWorldPosition.z = 0f;
 
-        // Dirección desde el jugador hacia el mouse
+        // Direcciï¿½n desde el jugador hacia el mouse
         facingDirection =
             ((Vector2)mouseWorldPosition - (Vector2)transform.position).normalized;
 
