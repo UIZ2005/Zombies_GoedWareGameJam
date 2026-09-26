@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1b66dee9a17db7d45b0e807e671c8d29
+guid: 9b2083d9313d403438e332e2c10d9599
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6026116661601056020
-    second: Camino tierra cuadro2_0
+      213: 8133054911805896836
+    second: Arbusto Solo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Camino tierra cuadro2_0
+      name: Arbusto Solo_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32768
-        height: 1681
+        width: 2266
+        height: 1177
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ceac432f2deee5ca0800000000000000
-      internalID: -6026116661601056020
+      spriteID: 488bfecf95a6ed070800000000000000
+      internalID: 8133054911805896836
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Camino tierra cuadro2_0: -6026116661601056020
+      Arbusto Solo_0: 8133054911805896836
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
