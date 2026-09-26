@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9e4d42f7481b4f84f8047dfbba8ea8b7
+guid: 193d56ae81b957043b5466bb2b8eec9e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1067859038843623783
-    second: Interseccion carretera 1_0
+      213: 8959005192995969142
+    second: Techo escuela abajo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Interseccion carretera 1_0
+      name: Techo escuela abajo_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1572
-        height: 18156
+        width: 12956
+        height: 284
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 769d678532cc1de00800000000000000
-      internalID: 1067859038843623783
+      spriteID: 678976591c7c45c70800000000000000
+      internalID: 8959005192995969142
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Interseccion carretera 1_0: 1067859038843623783
+      Techo escuela abajo_0: 8959005192995969142
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
