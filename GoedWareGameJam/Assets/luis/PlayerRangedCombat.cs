@@ -12,6 +12,9 @@ public class PlayerRangedCombat : MonoBehaviour
 
     [Header("Arma actual")]
     [SerializeField] private RangedWeapon currentWeapon = RangedWeapon.Cerbatana;
+    [SerializeField] private GameObject[] currentWeapon_GO;
+    public int Nweapon;
+
 
     [Header("Dirección")]
     [SerializeField] private Transform firePoint;
@@ -37,29 +40,54 @@ public class PlayerRangedCombat : MonoBehaviour
     [SerializeField] private float slowMultiplier = 0.5f;
 
     [Header("Lanzamiento de Libros")]
-    [SerializeField] private GameObject bookProjectile;
+    [SerializeField] private GameObject[] bookProjectiles;
     [SerializeField] private float bookDamage = 100f;
     [SerializeField] private float bookSpeed = 8f;
     [SerializeField] private float bookCooldown = 0.8f;
     [SerializeField] private float bookSpreadAngle = 25f;
     [SerializeField] private float bookLifetime = 0.5f;
 
+  
 
     private void Update()
     {
         UpdateFacingDirection();
 
     }
+    public void OnCrouch()
+    {
+        updateWeapon(Nweapon);
+    }
     public void updateWeapon(int n)
     {
-        if (n==1)
-                ChangeWeapon(RangedWeapon.Cerbatana);
+        if (n == 0) return;
+
+        if (n == 1)
+        {
+            ChangeWeapon(RangedWeapon.Cerbatana);
+            currentWeapon_GO[0].SetActive(true);
+            currentWeapon_GO[1].SetActive(false);
+            currentWeapon_GO[2].SetActive(false);
+
+        }
+                
 
         if (n == 2)
-                ChangeWeapon(RangedWeapon.PistolaLigas);
+        {
+            ChangeWeapon(RangedWeapon.PistolaLigas);
+            currentWeapon_GO[2].SetActive(true);
+            currentWeapon_GO[1].SetActive(false);
+            currentWeapon_GO[0].SetActive(false);
+        }
+                
 
         if (n == 3)
-                ChangeWeapon(RangedWeapon.Libros);
+        {
+            ChangeWeapon(RangedWeapon.Libros);
+            currentWeapon_GO[1].SetActive(true);
+            currentWeapon_GO[0].SetActive(false);
+            currentWeapon_GO[2].SetActive(false);
+        }  
     }
 
     public void OnFire(InputValue value)
@@ -204,11 +232,11 @@ public class PlayerRangedCombat : MonoBehaviour
 
     private void ShootBooks()
     {
-        if (bookProjectile == null)
+        if (bookProjectiles == null)
             return;
 
         // Libro central
-        CreateBookProjectile(facingDirection);
+        CreateBookProjectile(bookProjectiles[1], facingDirection);
 
         // Libro superior
         Vector2 upperDirection =
@@ -217,7 +245,7 @@ public class PlayerRangedCombat : MonoBehaviour
                 bookSpreadAngle
             );
 
-        CreateBookProjectile(upperDirection);
+        CreateBookProjectile(bookProjectiles[0], upperDirection);
 
         // Libro inferior
         Vector2 lowerDirection =
@@ -226,13 +254,13 @@ public class PlayerRangedCombat : MonoBehaviour
                 -bookSpreadAngle
             );
 
-        CreateBookProjectile(lowerDirection);
+        CreateBookProjectile(bookProjectiles[2], lowerDirection);
 
         nextFireTime = Time.time + bookCooldown;
     }
 
 
-    private void CreateBookProjectile(Vector2 direction)
+    private void CreateBookProjectile(GameObject bookProjectile, Vector2 direction)
     {
         GameObject projectile = Instantiate(
             bookProjectile,

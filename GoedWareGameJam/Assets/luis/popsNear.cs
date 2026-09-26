@@ -6,8 +6,10 @@ public class popsNear : MonoBehaviour
     public GameObject canva;
     public int numeroDelarma;
     
-    [Header("¿Es un explosivo? (Marcar para Botella, Mochila, Sopa)")]
-    public bool esExplosivo; 
+    [Header("¿Es un explosivo?")]
+    public bool esExplosivo;
+    [Header("¿Es un Melee?")]
+    public bool esMelee=false;
 
     private GameObject player;
 
@@ -28,9 +30,13 @@ public class popsNear : MonoBehaviour
                 player.GetComponent<PlayerExplosives>().NExplosive = numeroDelarma;
             }
             // Si no, se lo pasamos a PlayerCombat como siempre
-            else 
+            else if(esMelee)
             {
                 player.GetComponent<PlayerCombat>().Nweapon = numeroDelarma;
+            }
+            else
+            {
+                player.GetComponent<PlayerRangedCombat>().Nweapon = numeroDelarma;
             }
         }
     }
