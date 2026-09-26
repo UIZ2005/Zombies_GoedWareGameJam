@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 9de84edc8eece7c48b59644722ccfb05
+guid: 361fb6a34867a6a498032732488a1b29
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9031831544043237258
-    second: Cono_0
+      213: -8524122632251720516
+    second: Barrera_0
+  - first:
+      213: -5164054214843386445
+    second: Barrera_1
+  - first:
+      213: 3741757338874211154
+    second: Barrera_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cono_0
+      name: Barrera_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 702
-        height: 872
+        x: 294
+        y: 1335
+        width: 179
+        height: 191
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +160,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 670922a301d78a280800000000000000
-      internalID: -9031831544043237258
+      spriteID: cbcb4c2f0ab34b980800000000000000
+      internalID: -8524122632251720516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barrera_1
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 1315
+        width: 196
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b5b66b4d089558b0800000000000000
+      internalID: -5164054214843386445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barrera_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1646
+        height: 1333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25bee4b99746de330800000000000000
+      internalID: 3741757338874211154
       vertices: []
       indices: 
       edges: []
@@ -174,7 +224,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cono_0: -9031831544043237258
+      Barrera_0: -8524122632251720516
+      Barrera_1: -5164054214843386445
+      Barrera_2: 3741757338874211154
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
