@@ -41,43 +41,41 @@ public class MovePlayer : MonoBehaviour
         {
             if (movement.x < 0)
             {
-                //transform.rotation = Quaternion.Euler(0f, 180f, 0f);
-                //spriteRenderer.flipX = true;
+               spriteRenderer.flipX = true;
             }
             else
             {
-                //transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-                //spriteRenderer.flipX = false;
+              spriteRenderer.flipX = false;
             }
 
-            //animator.SetFloat("XInput", movement.x);
-            //animator.SetFloat("YInput", movement.y);
+            animator.SetFloat("XInput", movement.x);
+            animator.SetFloat("YInput", movement.y);
         }
     }
 
 
     private void FixedUpdate()
     {
-        /*
+     
         if (quieto)
         {
             rb.linearVelocity = Vector2.zero;
             animator.SetBool("IsWalking", false);
             return;
-        }*/
+        }
 
         Vector2 direction = movement.normalized;
 
         rb.linearVelocity = direction * speed;
 
-        /*if (movement != Vector2.zero)
+        if (movement != Vector2.zero)
         {
             animator.SetBool("IsWalking", true);
         }
         else
         {
             animator.SetBool("IsWalking", false);
-        }*/
+        }
     }
 
     public void ActivarQuieto()
