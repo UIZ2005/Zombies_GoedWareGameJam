@@ -51,9 +51,13 @@ public class popsNear : MonoBehaviour
             {
                 player.GetComponent<PlayerExplosives>().NExplosive = 0;
             }
-            else
+            else if (esMelee)
             {
                 player.GetComponent<PlayerCombat>().Nweapon = 0;
+            }
+            else
+            {
+                player.GetComponent<PlayerRangedCombat>().Nweapon = 0;
             }
         }
     }

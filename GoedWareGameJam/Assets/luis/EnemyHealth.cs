@@ -24,6 +24,8 @@ public class EnemyHealth : MonoBehaviour
     [Header("Animación")]
     [SerializeField] private Animator animator;
     [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private float minAlpha = 0.3f;
+    [SerializeField] private float maxAlpha = 1f;
 
     private Rigidbody2D rb;
     private bool isDead = false;
@@ -164,6 +166,8 @@ public class EnemyHealth : MonoBehaviour
         if (isDead) return;
 
         currentHealth -= damage;
+        UpdateHealthTransparency();
+
 
         if (rb != null && knockbackForce > 0)
         {
@@ -175,6 +179,41 @@ public class EnemyHealth : MonoBehaviour
         {
             Die();
         }
+    }
+    private void UpdateHealthTransparency()
+    {
+        if (spriteRenderer == null)
+        {
+            Debug.LogWarning("No hay SpriteRenderer asignado.");
+            return;
+        }
+
+        // Remap de vida:
+        // currentHealth 0    -> 0
+        // currentHealth 100  -> 1
+        float healthNormalized = Mathf.InverseLerp(
+            0f,
+            maxHealth,
+            currentHealth
+        );
+
+        // Remap:
+        // 0   -> 0.3
+        // 1   -> 1
+        float alpha = Mathf.Lerp(
+            minAlpha,
+            maxAlpha,
+            healthNormalized
+        );
+
+        Color color = spriteRenderer.color;
+        color.a = alpha;
+
+        spriteRenderer.color = color;
+
+        Debug.Log(
+            $"HP: {currentHealth}/{maxHealth} | Normalizado: {healthNormalized} | Alpha: {alpha}"
+        );
     }
 
     private IEnumerator ApplyKnockback(Vector2 direction, float force)
