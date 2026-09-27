@@ -60,11 +60,8 @@ public class PlayerCombat : MonoBehaviour
     }
     public void OnInteract(InputValue value)
     {
-
-        if (value.isPressed)
-        {
-            TryAttack();
-        }
+        TryAttack();
+        Debug.Log("pressE");
     }
     // =========================================
     // SELECCIÓN DE ARMAS
@@ -107,7 +104,13 @@ public class PlayerCombat : MonoBehaviour
 
     public void OnMove(InputValue value)
     {
-        movement = value.Get<Vector2>();
+        Vector2 newMovement = value.Get<Vector2>();
+
+        if (newMovement.sqrMagnitude > 0.01f)
+        {
+            movement = newMovement;
+
+        }
     }
 
     private void UpdateFacingDirection()
@@ -320,6 +323,11 @@ public class PlayerCombat : MonoBehaviour
     private void Update()
     {
         UpdateFacingDirection();
+
+        if (Keyboard.current.eKey.wasPressedThisFrame)
+        {
+            TryAttack();
+        }
     }
 
     IEnumerator animacionArma(float timeAction)
