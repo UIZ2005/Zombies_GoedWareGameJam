@@ -1,6 +1,8 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.UI;
+
 
 public class VidaJugador : MonoBehaviour
 {
@@ -23,6 +25,10 @@ public class VidaJugador : MonoBehaviour
     private float contadorInvencible = 0f;
     private Animator animator;
 
+
+
+
+    public PlayableDirector cinematicaMuerte; 
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -99,6 +105,9 @@ public class VidaJugador : MonoBehaviour
     {
         Debug.Log("murio");
         // aqui se deberia activar la animacion de morir, de convertirse en zombie, cuando la tenga finalizada
+        cinematicaMuerte.transform.SetParent(null); // la suelta del jugador, se queda donde murió
+        cinematicaMuerte.gameObject.SetActive(true);
+        cinematicaMuerte.Play();
     }
 
     void OnCollisionEnter2D(Collision2D col)
