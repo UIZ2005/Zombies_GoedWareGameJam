@@ -12,7 +12,7 @@ public class VidaJugador : MonoBehaviour
 
     public Image[] corazones;
 
-    // Hijos del niño en orden: Normal, MedioZombie, Zombie
+    
     public GameObject[] aspectos;
     private int aspectoActual = 0;
 
@@ -27,7 +27,7 @@ public class VidaJugador : MonoBehaviour
         vidasActuales = vidasMaximas;
         ActualizarCorazones();
 
-        // Solo el primer aspecto empieza activo
+        //  primer aspecto empieza activo
         for (int i = 0; i < aspectos.Length; i++)
             aspectos[i].SetActive(i == 0);
     }
@@ -53,7 +53,6 @@ public class VidaJugador : MonoBehaviour
             return;
         }
 
-        // 2 vidas -> aspecto 1, 1 vida -> aspecto 2
         StartCoroutine(CambiarAspecto(vidasMaximas - vidasActuales));
     }
 
@@ -67,7 +66,7 @@ public class VidaJugador : MonoBehaviour
 
         siguiente.SetActive(true);
 
-        // Parpadeo: alterna entre el sprite viejo y el nuevo
+        // alterna entre el sprite viejo y el nuevo
         float tiempo = 0f;
         bool mostrarNuevo = false;
         while (tiempo < duracionParpadeo)

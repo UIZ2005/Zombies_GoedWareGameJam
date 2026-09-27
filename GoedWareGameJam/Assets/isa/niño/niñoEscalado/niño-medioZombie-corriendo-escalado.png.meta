@@ -1,28 +1,25 @@
 fileFormatVersion: 2
-guid: 9c79e20acd129c944aa0ba3c9679de56
+guid: 1109308a70f959c48af192c46a82c70d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -488315905774817660
-    second: "ni\xF1o-idle-escalado_0"
+      213: -8497927463082724132
+    second: "ni\xF1o-medioZombie-corriendo-escalado_0"
   - first:
-      213: 1449788006545445231
-    second: "ni\xF1o-idle-escalado_1"
+      213: 4912155188491957706
+    second: "ni\xF1o-medioZombie-corriendo-escalado_1"
   - first:
-      213: -7300583485539727222
-    second: "ni\xF1o-idle-escalado_2"
+      213: 7659797311926762482
+    second: "ni\xF1o-medioZombie-corriendo-escalado_2"
   - first:
-      213: -8426356720822238708
-    second: "ni\xF1o-idle-escalado_3"
+      213: 8227054604250757565
+    second: "ni\xF1o-medioZombie-corriendo-escalado_3"
   - first:
-      213: 6904254204968139124
-    second: "ni\xF1o-idle-escalado_4"
+      213: -2356633679439594344
+    second: "ni\xF1o-medioZombie-corriendo-escalado_4"
   - first:
-      213: 7204790039679361218
-    second: "ni\xF1o-idle-escalado_5"
-  - first:
-      213: -3236743499491937935
-    second: "ni\xF1o-idle-escalado_6"
+      213: 4788947020216206295
+    second: "ni\xF1o-medioZombie-corriendo-escalado_5"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -144,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "ni\xF1o-idle-escalado_0"
+      name: "ni\xF1o-medioZombie-corriendo-escalado_0"
       rect:
         serializedVersion: 2
-        x: 1166
-        y: 2604
-        width: 6
-        height: 6
+        x: 19
+        y: 1267
+        width: 1006
+        height: 1709
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 48e6e1a55472939f0800000000000000
-      internalID: -488315905774817660
+      spriteID: cd4faeb0ffb411a80800000000000000
+      internalID: -8497927463082724132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "ni\xF1o-idle-escalado_1"
+      name: "ni\xF1o-medioZombie-corriendo-escalado_1"
       rect:
         serializedVersion: 2
-        x: 2163
-        y: 2603
-        width: 7
-        height: 6
+        x: 1088
+        y: 1249
+        width: 994
+        height: 1728
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f6153c9b28eae1410800000000000000
-      internalID: 1449788006545445231
+      spriteID: ac5b7a34e1b7b2440800000000000000
+      internalID: 4912155188491957706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "ni\xF1o-idle-escalado_2"
+      name: "ni\xF1o-medioZombie-corriendo-escalado_2"
       rect:
         serializedVersion: 2
-        x: 3140
-        y: 2600
-        width: 9
-        height: 7
+        x: 2201
+        y: 1237
+        width: 929
+        height: 1763
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a884253000e1faa90800000000000000
-      internalID: -7300583485539727222
+      spriteID: 2fbf2e462111d4a60800000000000000
+      internalID: 7659797311926762482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "ni\xF1o-idle-escalado_3"
+      name: "ni\xF1o-medioZombie-corriendo-escalado_3"
       rect:
         serializedVersion: 2
-        x: 3813
-        y: 831
-        width: 851
-        height: 1776
+        x: 3139
+        y: 1256
+        width: 1133
+        height: 1726
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c024aa805319f0b80800000000000000
-      internalID: -8426356720822238708
+      spriteID: db9bb12e29e5c2270800000000000000
+      internalID: 8227054604250757565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "ni\xF1o-idle-escalado_4"
+      name: "ni\xF1o-medioZombie-corriendo-escalado_4"
       rect:
         serializedVersion: 2
-        x: 936
-        y: 831
-        width: 798
-        height: 1737
+        x: 4293
+        y: 1265
+        width: 895
+        height: 1714
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4797f1e7e96d0df50800000000000000
-      internalID: 6904254204968139124
+      spriteID: 89cf74f872e8b4fd0800000000000000
+      internalID: -2356633679439594344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "ni\xF1o-idle-escalado_5"
+      name: "ni\xF1o-medioZombie-corriendo-escalado_5"
       rect:
         serializedVersion: 2
-        x: 1881
-        y: 824
-        width: 853
-        height: 1770
+        x: 4994
+        y: 29
+        width: 957
+        height: 1736
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,30 +266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c06c545e5e8cf360800000000000000
-      internalID: 7204790039679361218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "ni\xF1o-idle-escalado_6"
-      rect:
-        serializedVersion: 2
-        x: 2911
-        y: 827
-        width: 798
-        height: 1769
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1717abbafe6c413d0800000000000000
-      internalID: -3236743499491937935
+      spriteID: 7d3072421f1c57240800000000000000
+      internalID: 4788947020216206295
       vertices: []
       indices: 
       edges: []
@@ -311,13 +286,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "ni\xF1o-idle-escalado_0": -488315905774817660
-      "ni\xF1o-idle-escalado_1": 1449788006545445231
-      "ni\xF1o-idle-escalado_2": -7300583485539727222
-      "ni\xF1o-idle-escalado_3": -8426356720822238708
-      "ni\xF1o-idle-escalado_4": 6904254204968139124
-      "ni\xF1o-idle-escalado_5": 7204790039679361218
-      "ni\xF1o-idle-escalado_6": -3236743499491937935
+      "ni\xF1o-medioZombie-corriendo-escalado_0": -8497927463082724132
+      "ni\xF1o-medioZombie-corriendo-escalado_1": 4912155188491957706
+      "ni\xF1o-medioZombie-corriendo-escalado_2": 7659797311926762482
+      "ni\xF1o-medioZombie-corriendo-escalado_3": 8227054604250757565
+      "ni\xF1o-medioZombie-corriendo-escalado_4": -2356633679439594344
+      "ni\xF1o-medioZombie-corriendo-escalado_5": 4788947020216206295
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

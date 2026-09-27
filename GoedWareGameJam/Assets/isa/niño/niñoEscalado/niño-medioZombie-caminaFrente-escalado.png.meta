@@ -1,28 +1,22 @@
 fileFormatVersion: 2
-guid: 9c79e20acd129c944aa0ba3c9679de56
+guid: 19ccfa9dc550f5746be88a0b65173d04
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -488315905774817660
-    second: "ni\xF1o-idle-escalado_0"
+      213: -8461057376814291153
+    second: "ni\xF1o-medioZombie-caminaFrente-escalado_0"
   - first:
-      213: 1449788006545445231
-    second: "ni\xF1o-idle-escalado_1"
+      213: 8884379199221641757
+    second: "ni\xF1o-medioZombie-caminaFrente-escalado_1"
   - first:
-      213: -7300583485539727222
-    second: "ni\xF1o-idle-escalado_2"
+      213: -1500855304048998552
+    second: "ni\xF1o-medioZombie-caminaFrente-escalado_2"
   - first:
-      213: -8426356720822238708
-    second: "ni\xF1o-idle-escalado_3"
+      213: 6154227965424137974
+    second: "ni\xF1o-medioZombie-caminaFrente-escalado_3"
   - first:
-      213: 6904254204968139124
-    second: "ni\xF1o-idle-escalado_4"
-  - first:
-      213: 7204790039679361218
-    second: "ni\xF1o-idle-escalado_5"
-  - first:
-      213: -3236743499491937935
-    second: "ni\xF1o-idle-escalado_6"
+      213: -4308508879650759021
+    second: "ni\xF1o-medioZombie-caminaFrente-escalado_4"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -144,11 +138,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "ni\xF1o-idle-escalado_0"
+      name: "ni\xF1o-medioZombie-caminaFrente-escalado_0"
       rect:
         serializedVersion: 2
-        x: 1166
-        y: 2604
+        x: 1156
+        y: 2598
         width: 6
         height: 6
       alignment: 0
@@ -159,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 48e6e1a55472939f0800000000000000
-      internalID: -488315905774817660
+      spriteID: f2729c6f429449a80800000000000000
+      internalID: -8461057376814291153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "ni\xF1o-idle-escalado_1"
+      name: "ni\xF1o-medioZombie-caminaFrente-escalado_1"
       rect:
         serializedVersion: 2
-        x: 2163
-        y: 2603
-        width: 7
-        height: 6
+        x: 925
+        y: 834
+        width: 799
+        height: 1758
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,107 +175,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f6153c9b28eae1410800000000000000
-      internalID: 1449788006545445231
+      spriteID: d12b97b6fc7ab4b70800000000000000
+      internalID: 8884379199221641757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "ni\xF1o-idle-escalado_2"
+      name: "ni\xF1o-medioZombie-caminaFrente-escalado_2"
       rect:
         serializedVersion: 2
-        x: 3140
-        y: 2600
-        width: 9
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a884253000e1faa90800000000000000
-      internalID: -7300583485539727222
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "ni\xF1o-idle-escalado_3"
-      rect:
-        serializedVersion: 2
-        x: 3813
-        y: 831
-        width: 851
-        height: 1776
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c024aa805319f0b80800000000000000
-      internalID: -8426356720822238708
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "ni\xF1o-idle-escalado_4"
-      rect:
-        serializedVersion: 2
-        x: 936
-        y: 831
-        width: 798
-        height: 1737
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4797f1e7e96d0df50800000000000000
-      internalID: 6904254204968139124
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "ni\xF1o-idle-escalado_5"
-      rect:
-        serializedVersion: 2
-        x: 1881
-        y: 824
-        width: 853
-        height: 1770
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2c06c545e5e8cf360800000000000000
-      internalID: 7204790039679361218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "ni\xF1o-idle-escalado_6"
-      rect:
-        serializedVersion: 2
-        x: 2911
-        y: 827
-        width: 798
+        x: 1915
+        y: 787
+        width: 846
         height: 1769
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -291,8 +197,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1717abbafe6c413d0800000000000000
-      internalID: -3236743499491937935
+      spriteID: 86706e68d04eb2be0800000000000000
+      internalID: -1500855304048998552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ni\xF1o-medioZombie-caminaFrente-escalado_3"
+      rect:
+        serializedVersion: 2
+        x: 2837
+        y: 807
+        width: 802
+        height: 1771
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f671e16ab5386550800000000000000
+      internalID: 6154227965424137974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ni\xF1o-medioZombie-caminaFrente-escalado_4"
+      rect:
+        serializedVersion: 2
+        x: 3703
+        y: 799
+        width: 846
+        height: 1770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39edccc500a1534c0800000000000000
+      internalID: -4308508879650759021
       vertices: []
       indices: 
       edges: []
@@ -311,13 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "ni\xF1o-idle-escalado_0": -488315905774817660
-      "ni\xF1o-idle-escalado_1": 1449788006545445231
-      "ni\xF1o-idle-escalado_2": -7300583485539727222
-      "ni\xF1o-idle-escalado_3": -8426356720822238708
-      "ni\xF1o-idle-escalado_4": 6904254204968139124
-      "ni\xF1o-idle-escalado_5": 7204790039679361218
-      "ni\xF1o-idle-escalado_6": -3236743499491937935
+      "ni\xF1o-medioZombie-caminaFrente-escalado_0": -8461057376814291153
+      "ni\xF1o-medioZombie-caminaFrente-escalado_1": 8884379199221641757
+      "ni\xF1o-medioZombie-caminaFrente-escalado_2": -1500855304048998552
+      "ni\xF1o-medioZombie-caminaFrente-escalado_3": 6154227965424137974
+      "ni\xF1o-medioZombie-caminaFrente-escalado_4": -4308508879650759021
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
