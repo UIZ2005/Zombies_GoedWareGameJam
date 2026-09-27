@@ -288,11 +288,36 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bb1d2e84c8c02145bbea2e10c3410d7, type: 3}
+--- !u!1 &508391566 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7804203332176877172, guid: fc1931638f87b1042b93818227cffc27, type: 3}
+  m_PrefabInstance: {fileID: 6767376696795915442}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &508391572 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 61812976556313934, guid: fc1931638f87b1042b93818227cffc27, type: 3}
   m_PrefabInstance: {fileID: 6767376696795915442}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &508391577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508391566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e66a4b8561faca94db071991db5bc88a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VidaJugador
+  vidasMaximas: 3
+  audioSource: {fileID: 0}
+  popCorazon: {fileID: 0}
+  corazones: []
+  aspectos: []
+  duracionParpadeo: 0.8
+  intervaloParpadeo: 0.1
+  tiempoInvencible: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1602,7 +1627,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7804203332176877172, guid: fc1931638f87b1042b93818227cffc27, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 508391577}
   m_SourcePrefab: {fileID: 100100000, guid: fc1931638f87b1042b93818227cffc27, type: 3}
 --- !u!1001 &7365030215027866462
 PrefabInstance:
