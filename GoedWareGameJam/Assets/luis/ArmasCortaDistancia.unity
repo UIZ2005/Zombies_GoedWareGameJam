@@ -665,34 +665,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1942585064039101877, guid: 9302386bed190504ca518362af34b0e4, type: 3}
-      propertyPath: m_Size.x
-      value: 8.841671
-      objectReference: {fileID: 0}
-    - target: {fileID: 1942585064039101877, guid: 9302386bed190504ca518362af34b0e4, type: 3}
-      propertyPath: m_Size.y
-      value: 4.539509
-      objectReference: {fileID: 0}
-    - target: {fileID: 1942585064039101877, guid: 9302386bed190504ca518362af34b0e4, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.10864353
-      objectReference: {fileID: 0}
-    - target: {fileID: 1942585064039101877, guid: 9302386bed190504ca518362af34b0e4, type: 3}
-      propertyPath: m_Offset.y
-      value: -10.8102455
-      objectReference: {fileID: 0}
-    - target: {fileID: 6596683873779201752, guid: 9302386bed190504ca518362af34b0e4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 6596683873779201752, guid: 9302386bed190504ca518362af34b0e4, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 6596683873779201752, guid: 9302386bed190504ca518362af34b0e4, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.12
-      objectReference: {fileID: 0}
     - target: {fileID: 6596683873779201752, guid: 9302386bed190504ca518362af34b0e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.46
@@ -736,10 +708,6 @@ PrefabInstance:
     - target: {fileID: 8747490719384673963, guid: 9302386bed190504ca518362af34b0e4, type: 3}
       propertyPath: m_Name
       value: ZombieF
-      objectReference: {fileID: 0}
-    - target: {fileID: 8747490719384673963, guid: 9302386bed190504ca518362af34b0e4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
