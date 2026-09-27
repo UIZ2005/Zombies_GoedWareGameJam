@@ -175,11 +175,12 @@ public class EnemyHealth : MonoBehaviour
         {
             if (knockbackCoroutine != null) StopCoroutine(knockbackCoroutine);
             knockbackCoroutine = StartCoroutine(ApplyKnockback(knockbackDirection, knockbackForce));
-            audiomanager.seleccionAudio(3);
+            
         }
 
         if (currentHealth <= 0)
         {
+            audiomanager.seleccionAudio(3);
             Die();
         }
     }
