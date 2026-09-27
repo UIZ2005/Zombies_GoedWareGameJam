@@ -21,9 +21,11 @@ public class VidaJugador : MonoBehaviour
 
     public float tiempoInvencible = 1f;
     private float contadorInvencible = 0f;
+    private Animator animator;
 
     void Start()
     {
+        animator = GetComponent<Animator>();
         vidasActuales = vidasMaximas;
         ActualizarCorazones();
 
@@ -46,7 +48,8 @@ public class VidaJugador : MonoBehaviour
         contadorInvencible = tiempoInvencible;
         ActualizarCorazones();
         audioSource.PlayOneShot(popCorazon);
-
+        if (vidasActuales == 2) animator.SetBool("IsmidZombie", true);
+        if (vidasActuales == 1) animator.SetBool("IsZombie", true);
         if (vidasActuales <= 0)
         {
             Morir();

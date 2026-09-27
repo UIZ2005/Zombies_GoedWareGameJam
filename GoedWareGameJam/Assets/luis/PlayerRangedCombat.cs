@@ -18,6 +18,7 @@ public class PlayerRangedCombat : MonoBehaviour
 
     [Header("Direcci�n")]
     [SerializeField] private Transform firePoint;
+    [SerializeField] private float distanceDireccion=0.6f;
 
     private Vector2 facingDirection = Vector2.down;
 
@@ -117,7 +118,7 @@ public class PlayerRangedCombat : MonoBehaviour
         if (firePoint != null)
         {
             firePoint.localPosition =
-                facingDirection * 0.6f;
+                facingDirection * distanceDireccion;
 
             // Rotar el FirePoint hacia el mouse
             float angle =

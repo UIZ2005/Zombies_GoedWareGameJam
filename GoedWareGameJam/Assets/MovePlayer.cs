@@ -48,8 +48,12 @@ public class MovePlayer : MonoBehaviour
               spriteRenderer.flipX = false;
             }
 
-            animator.SetFloat("XInput", movement.x);
-            animator.SetFloat("YInput", movement.y);
+            if (animator != null)
+            {
+                animator.SetFloat("XInput", movement.x);
+                animator.SetFloat("YInput", movement.y);
+            }
+            
         }
     }
 
@@ -68,13 +72,17 @@ public class MovePlayer : MonoBehaviour
 
         rb.linearVelocity = direction * speed;
 
-        if (movement != Vector2.zero)
-        {
-            animator.SetBool("IsWalking", true);
-        }
-        else
-        {
+
+
+        if (animator != null) { 
+            if (movement != Vector2.zero)
+            {
+                animator.SetBool("IsWalking", true);
+            }
+            else
+            {
             animator.SetBool("IsWalking", false);
+            }
         }
     }
 
