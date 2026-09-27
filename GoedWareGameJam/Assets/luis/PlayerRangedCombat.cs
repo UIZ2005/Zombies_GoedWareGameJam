@@ -93,6 +93,14 @@ public class PlayerRangedCombat : MonoBehaviour
         }  
     }
 
+    public void desativeweapon()
+    {
+        foreach(GameObject armas in currentWeapon_GO)
+        {
+            armas.SetActive(false);
+        }
+    }
+
     public void OnFire(InputValue value)
     {
        if (Time.time >= nextFireTime)

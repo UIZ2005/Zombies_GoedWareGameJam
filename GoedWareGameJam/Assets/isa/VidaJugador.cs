@@ -24,6 +24,7 @@ public class VidaJugador : MonoBehaviour
     public float tiempoInvencible = 1f;
     private float contadorInvencible = 0f;
     private Animator animator;
+    private GameObject[] Enemigos;
 
 
 
@@ -103,6 +104,19 @@ public class VidaJugador : MonoBehaviour
 
     void Morir()
     {
+        Enemigos = GameObject.FindGameObjectsWithTag("Enemy");
+
+        foreach (GameObject enemigo in Enemigos)
+        {
+            enemigo.SetActive(false);
+        }
+
+        gameObject.GetComponent<MovePlayer>().ActivarQuieto();
+        gameObject.GetComponent<PlayerCombat>().enabled = false;
+        gameObject.GetComponent<PlayerExplosives>().enabled = false;
+        gameObject.GetComponent<PlayerRangedCombat>().desativeweapon();
+        gameObject.GetComponent<PlayerRangedCombat>().enabled = false;
+
         Debug.Log("murio");
         // aqui se deberia activar la animacion de morir, de convertirse en zombie, cuando la tenga finalizada
         cinematicaMuerte.transform.SetParent(null); // la suelta del jugador, se queda donde murió

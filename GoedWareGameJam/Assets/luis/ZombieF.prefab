@@ -204,7 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61e76fa7c23afea4b83a175c9a34cc4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
-  speed: 2.5
+  speed: 4
   stoppingDistance: 1.1
   maxDistanceToNavMesh: 2
   knockbackDuration: 0.9
