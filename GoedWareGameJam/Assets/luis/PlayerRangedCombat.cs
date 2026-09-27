@@ -1,17 +1,19 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static PlayerExplosives;
 
 public class PlayerRangedCombat : MonoBehaviour
 {
     public enum RangedWeapon
     {
+        Ninguno,
         Cerbatana,
         PistolaLigas,
         Libros
     }
 
     [Header("Arma actual")]
-    [SerializeField] private RangedWeapon currentWeapon = RangedWeapon.Cerbatana;
+    [SerializeField] private RangedWeapon currentWeapon = RangedWeapon.Ninguno;
     [SerializeField] private GameObject[] currentWeapon_GO;
     public int Nweapon;
 
@@ -139,6 +141,8 @@ public class PlayerRangedCombat : MonoBehaviour
 
     private void Shoot()
     {
+        if (currentWeapon == RangedWeapon.Ninguno) return;
+
         switch (currentWeapon)
         {
             case RangedWeapon.Cerbatana:

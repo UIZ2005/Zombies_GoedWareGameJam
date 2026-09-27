@@ -2,18 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static PlayerRangedCombat;
 
 public class PlayerCombat : MonoBehaviour
 {
     public enum WeaponType
     {
+        Ninguno,
         Regla,
         Tijeras,
         Compas
     }
 
     [Header("Weapon Selection")]
-    [SerializeField] private WeaponType currentWeapon = WeaponType.Regla;
+    [SerializeField] private WeaponType currentWeapon = WeaponType.Ninguno;
     public int Nweapon;
 
     [Header("References")]
@@ -139,6 +141,9 @@ public class PlayerCombat : MonoBehaviour
 
     private void TryAttack()
     {
+
+        if (currentWeapon == WeaponType.Ninguno) return;
+
         if (Time.time < nextAttackTime)
             return;
 
