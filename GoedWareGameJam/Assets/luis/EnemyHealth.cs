@@ -66,6 +66,26 @@ public class EnemyHealth : MonoBehaviour
         {
             Debug.LogWarning("No se encontró un objeto con el tag Player.");
         }
+        // Intentar colocar al enemigo sobre el NavMesh
+        if (agent != null && !agent.isOnNavMesh)
+        {
+            UnityEngine.AI.NavMeshHit hit;
+
+            if (UnityEngine.AI.NavMesh.SamplePosition(
+                transform.position,
+                out hit,
+                maxDistanceToNavMesh,
+                UnityEngine.AI.NavMesh.AllAreas))
+            {
+                agent.Warp(hit.position);
+            }
+            else
+            {
+                Debug.LogWarning(
+                    $"El enemigo {gameObject.name} apareció demasiado lejos del NavMesh."
+                );
+            }
+        }
     }
 
     private void Update()
