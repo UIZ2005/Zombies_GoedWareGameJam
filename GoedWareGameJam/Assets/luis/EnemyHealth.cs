@@ -30,8 +30,10 @@ public class EnemyHealth : MonoBehaviour
     private Rigidbody2D rb;
     private bool isDead = false;
 
+    private AudioManager audiomanager;
     private void Awake()
     {
+        audiomanager = FindAnyObjectByType<AudioManager>();
         currentHealth = maxHealth;
         rb = GetComponent<Rigidbody2D>();
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
@@ -173,6 +175,7 @@ public class EnemyHealth : MonoBehaviour
         {
             if (knockbackCoroutine != null) StopCoroutine(knockbackCoroutine);
             knockbackCoroutine = StartCoroutine(ApplyKnockback(knockbackDirection, knockbackForce));
+            audiomanager.seleccionAudio(3);
         }
 
         if (currentHealth <= 0)
