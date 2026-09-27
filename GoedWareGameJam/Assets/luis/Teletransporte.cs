@@ -33,9 +33,9 @@ public class Teletransporte : MonoBehaviour
     {
         StartCoroutine(teleport(player1));
     }
+
     IEnumerator teleport(GameObject player)
     {
-        audioManager.seleccionAudio(4);
         player.GetComponent<MovePlayer>().ActivarQuieto();
         //anim.SetBool("enter", true);
         yield return new WaitForSecondsRealtime(0.5f);
