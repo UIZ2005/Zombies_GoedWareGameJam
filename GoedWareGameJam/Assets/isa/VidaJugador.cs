@@ -56,7 +56,7 @@ public class VidaJugador : MonoBehaviour
             return;
         }
 
-        StartCoroutine(CambiarAspecto(vidasMaximas - vidasActuales));
+        //StartCoroutine(CambiarAspecto(vidasMaximas - vidasActuales));
     }
 
     IEnumerator CambiarAspecto(int nuevo)
