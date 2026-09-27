@@ -1,0 +1,515 @@
+fileFormatVersion: 2
+guid: 4214e276c8702944f9871f690bc32765
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4844649936058461028
+    second: leon_camina_0
+  - first:
+      213: 6448896703793782080
+    second: leon_camina_1
+  - first:
+      213: -1964483013568286512
+    second: leon_camina_2
+  - first:
+      213: -5318555022807655242
+    second: leon_camina_3
+  - first:
+      213: -8746243023189559573
+    second: leon_camina_4
+  - first:
+      213: -6218595963562966541
+    second: leon_camina_5
+  - first:
+      213: -7908301255582477013
+    second: leon_camina_6
+  - first:
+      213: 2101778921928496998
+    second: leon_camina_7
+  - first:
+      213: 4668562010245190155
+    second: leon_camina_8
+  - first:
+      213: 5330256916672898530
+    second: leon_camina_9
+  - first:
+      213: -1214380446993752051
+    second: leon_camina_10
+  - first:
+      213: 7656626957132760242
+    second: leon_camina_11
+  - first:
+      213: -6881035706020925169
+    second: leon_camina_12
+  - first:
+      213: -6057346582255799216
+    second: leon_camina_13
+  - first:
+      213: -8650520299228754280
+    second: leon_camina_14
+  - first:
+      213: -803895865481757053
+    second: leon_camina_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: leon_camina_0
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1824
+        width: 635
+        height: 1005
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46b22e3e277ab3340800000000000000
+      internalID: 4844649936058461028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leon_camina_1
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 1817
+        width: 634
+        height: 1008
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04dd0d662651f7950800000000000000
+      internalID: 6448896703793782080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leon_camina_2
+      rect:
+        serializedVersion: 2
+        x: 1988
+        y: 1820
+        width: 642
+        height: 1011
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d039f08b11ccb4e0800000000000000
+      internalID: -1964483013568286512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leon_camina_3
+      rect:
+        serializedVersion: 2
+        x: 2804
+        y: 1817
+        width: 642
+        height: 1015
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc1e2bb262b036b0800000000000000
+      internalID: -5318555022807655242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leon_camina_4
+      rect:
+        serializedVersion: 2
+        x: 3587
+        y: 1805
+        width: 643
+        height: 1015
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be63c8b5f4a1f9680800000000000000
+      internalID: -8746243023189559573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leon_camina_5
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 1787
+        width: 635
+        height: 1033
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f1c62e2beb13b9a0800000000000000
+      internalID: -6218595963562966541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leon_camina_6
+      rect:
+        serializedVersion: 2
+        x: 5088
+        y: 1794
+        width: 635
+        height: 1032
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b251b3478e1104290800000000000000
+      internalID: -7908301255582477013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leon_camina_8
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 178
+        width: 635
+        height: 1039
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b025c88c9601ac040800000000000000
+      internalID: 4668562010245190155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leon_camina_9
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 179
+        width: 635
+        height: 1044
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e56bdfbc60e8f940800000000000000
+      internalID: 5330256916672898530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leon_camina_10
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 185
+        width: 626
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00e1c2ea67a52fe0800000000000000
+      internalID: -1214380446993752051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leon_camina_11
+      rect:
+        serializedVersion: 2
+        x: 2762
+        y: 189
+        width: 633
+        height: 1030
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b40495a6adc14a60800000000000000
+      internalID: 7656626957132760242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leon_camina_12
+      rect:
+        serializedVersion: 2
+        x: 3560
+        y: 197
+        width: 633
+        height: 1022
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f01f7df8b76a180a0800000000000000
+      internalID: -6881035706020925169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leon_camina_13
+      rect:
+        serializedVersion: 2
+        x: 4339
+        y: 190
+        width: 633
+        height: 1018
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 054773b606bffeba0800000000000000
+      internalID: -6057346582255799216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leon_camina_14
+      rect:
+        serializedVersion: 2
+        x: 5153
+        y: 205
+        width: 627
+        height: 1014
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89e0a2ace9d23f780800000000000000
+      internalID: -8650520299228754280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b086f70f57adfa04086f679fcf96329a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      leon_camina_0: 4844649936058461028
+      leon_camina_1: 6448896703793782080
+      leon_camina_10: -1214380446993752051
+      leon_camina_11: 7656626957132760242
+      leon_camina_12: -6881035706020925169
+      leon_camina_13: -6057346582255799216
+      leon_camina_14: -8650520299228754280
+      leon_camina_15: -803895865481757053
+      leon_camina_2: -1964483013568286512
+      leon_camina_3: -5318555022807655242
+      leon_camina_4: -8746243023189559573
+      leon_camina_5: -6218595963562966541
+      leon_camina_6: -7908301255582477013
+      leon_camina_7: 2101778921928496998
+      leon_camina_8: 4668562010245190155
+      leon_camina_9: 5330256916672898530
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
