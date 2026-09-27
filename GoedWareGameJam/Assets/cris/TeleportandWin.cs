@@ -9,6 +9,7 @@ public class TeleportandWin : MonoBehaviour
     [Header("Interfaz (UI)")]
     [Tooltip("El Canvas que se activará al ganar.")]
     [SerializeField] private GameObject winCanvas;
+    [SerializeField] private GameObject EnemySpawner;
 
     [Header("Audio de Fondo")]
     [Tooltip("El GameObject o componente AudioSource del audio de fondo que se desactivará.")]
@@ -44,9 +45,10 @@ public class TeleportandWin : MonoBehaviour
             }
 
             // 2. Activar el Canvas de victoria
-            if (winCanvas != null)
+            if (winCanvas != null && EnemySpawner != null)
             {
                 winCanvas.SetActive(true);
+                EnemySpawner.SetActive(false);
             }
 
             // 3. Desactivar o apagar suavemente el audio de fondo
