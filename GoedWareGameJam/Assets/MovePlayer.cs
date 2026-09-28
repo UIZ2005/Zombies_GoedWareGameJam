@@ -33,7 +33,7 @@ public class MovePlayer : MonoBehaviour
     public void OnMove(InputValue value)
     {
         movement = value.Get<Vector2>();
-
+        audioManager.seleccionAudio(5);
         if (quieto)
         {
             movement = Vector2.zero;
@@ -56,7 +56,7 @@ public class MovePlayer : MonoBehaviour
                 animator.SetFloat("XInput", movement.x);
                 animator.SetFloat("YInput", movement.y);
             }
-            audioManager.seleccionAudio(5);
+           
         }
     }
 
