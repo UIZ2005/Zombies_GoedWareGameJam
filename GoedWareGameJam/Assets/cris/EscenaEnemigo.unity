@@ -4907,6 +4907,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &96626814 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2877055668201033091, guid: 0bb1d2e84c8c02145bbea2e10c3410d7, type: 3}
+  m_PrefabInstance: {fileID: 556008527}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &97616456
 GameObject:
   m_ObjectHideFlags: 0
@@ -16091,10 +16096,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActivarOBJ
   Zombies:
-  - {fileID: 0}
+  - {fileID: 96626814}
   - {fileID: 737843562}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 758611619}
+  - {fileID: 1127395179}
   - {fileID: 1944005653}
   - {fileID: 1016480629}
   - {fileID: 25258458}
@@ -40620,6 +40625,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &758611619 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2877055668201033091, guid: 0bb1d2e84c8c02145bbea2e10c3410d7, type: 3}
+  m_PrefabInstance: {fileID: 1652732340}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &762421333
 GameObject:
   m_ObjectHideFlags: 0
@@ -58346,6 +58356,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1127395179 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2877055668201033091, guid: 0bb1d2e84c8c02145bbea2e10c3410d7, type: 3}
+  m_PrefabInstance: {fileID: 315722972}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1130389726
 GameObject:
   m_ObjectHideFlags: 0
