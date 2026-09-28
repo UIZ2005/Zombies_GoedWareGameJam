@@ -1670,7 +1670,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2308169227012548451, guid: 9c6e1922c7cc30b46af4c0b347632d9a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 435970072}
   m_SourcePrefab: {fileID: 100100000, guid: 9c6e1922c7cc30b46af4c0b347632d9a, type: 3}
 --- !u!1 &28470264
 GameObject:
@@ -8360,7 +8363,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -2.0746486, y: -0.14737964}
+  m_Offset: {x: -4.1187944, y: -1.3109405}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8370,7 +8373,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5.149297, y: 2.0121198}
+  m_Size: {x: 9.237589, y: 4.3392415}
   m_EdgeRadius: 0
 --- !u!4 &170397632
 Transform:
@@ -17588,7 +17591,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7952248829135982782, guid: 7996efe29932fe342a468a46c194a175, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 800056132}
   m_SourcePrefab: {fileID: 100100000, guid: 7996efe29932fe342a468a46c194a175, type: 3}
 --- !u!1 &324491651
 GameObject:
@@ -23553,6 +23559,34 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!1 &435970071 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2308169227012548451, guid: 9c6e1922c7cc30b46af4c0b347632d9a, type: 3}
+  m_PrefabInstance: {fileID: 27198975}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &435970072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435970071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f6a6f042a331514080ff8793943eb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivarOBJ
+  Zombies:
+  - {fileID: 96626814}
+  - {fileID: 737843562}
+  - {fileID: 758611619}
+  - {fileID: 1127395179}
+  - {fileID: 1944005653}
+  - {fileID: 1016480629}
+  - {fileID: 25258458}
+  - {fileID: 1675700298}
+  - {fileID: 170397629}
+  npista: 0
 --- !u!1 &439857302
 GameObject:
   m_ObjectHideFlags: 0
@@ -37083,6 +37117,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711086061}
   m_CullTransparentMesh: 1
+--- !u!1 &711551544 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8878458907039256, guid: 06af6e251bfbb4849a8100ed457d4627, type: 3}
+  m_PrefabInstance: {fileID: 1844685208}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &711551545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711551544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f6a6f042a331514080ff8793943eb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivarOBJ
+  Zombies:
+  - {fileID: 96626814}
+  - {fileID: 737843562}
+  - {fileID: 758611619}
+  - {fileID: 1127395179}
+  - {fileID: 1944005653}
+  - {fileID: 1016480629}
+  - {fileID: 25258458}
+  - {fileID: 1675700298}
+  - {fileID: 170397629}
+  npista: 0
 --- !u!1 &714463207
 GameObject:
   m_ObjectHideFlags: 0
@@ -41665,6 +41727,34 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &800056131 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7952248829135982782, guid: 7996efe29932fe342a468a46c194a175, type: 3}
+  m_PrefabInstance: {fileID: 323782784}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &800056132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800056131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f6a6f042a331514080ff8793943eb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivarOBJ
+  Zombies:
+  - {fileID: 96626814}
+  - {fileID: 737843562}
+  - {fileID: 758611619}
+  - {fileID: 1127395179}
+  - {fileID: 1944005653}
+  - {fileID: 1016480629}
+  - {fileID: 25258458}
+  - {fileID: 1675700298}
+  - {fileID: 170397629}
+  npista: 0
 --- !u!1 &804233209
 GameObject:
   m_ObjectHideFlags: 0
@@ -60935,7 +61025,7 @@ Transform:
   m_GameObject: {fileID: 1186747294}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.20000094, y: -2.2333417, z: 0}
+  m_LocalPosition: {x: -0.20000094, y: 11.5, z: 0}
   m_LocalScale: {x: 1.0780001, y: 1.0780001, z: 1.0780001}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -61010,7 +61100,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 20
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7446898362711189279, guid: cecbdbf8e68125f4cba43f48d58151c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -96627,7 +96717,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8878458907039256, guid: 06af6e251bfbb4849a8100ed457d4627, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 711551545}
   m_SourcePrefab: {fileID: 100100000, guid: 06af6e251bfbb4849a8100ed457d4627, type: 3}
 --- !u!1 &1845756530
 GameObject:
@@ -107402,6 +107495,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6150860988214131204, guid: 8cfd42f985e3db048a3ad81fac7628ff, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2048762080}
+    - targetCorrespondingSourceObject: {fileID: 6150860988214131204, guid: 8cfd42f985e3db048a3ad81fac7628ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2048762081}
   m_SourcePrefab: {fileID: 100100000, guid: 8cfd42f985e3db048a3ad81fac7628ff, type: 3}
 --- !u!1 &2048762079 stripped
 GameObject:
@@ -107422,6 +107518,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ActivarOBJ
   Zombies: []
   npista: 1
+--- !u!114 &2048762081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048762079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f6a6f042a331514080ff8793943eb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivarOBJ
+  Zombies:
+  - {fileID: 96626814}
+  - {fileID: 737843562}
+  - {fileID: 758611619}
+  - {fileID: 1127395179}
+  - {fileID: 1944005653}
+  - {fileID: 1016480629}
+  - {fileID: 25258458}
+  - {fileID: 1675700298}
+  - {fileID: 170397629}
+  npista: 0
 --- !u!1 &2048833929
 GameObject:
   m_ObjectHideFlags: 0
