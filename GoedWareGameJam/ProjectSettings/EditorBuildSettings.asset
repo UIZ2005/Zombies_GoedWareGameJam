@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/suarez/MENUS.unity
+    guid: 4443255c5d8ee6047bd74f02ca6fbc0d
+  - enabled: 1
     path: Assets/cris/EscenaEnemigo.unity
     guid: 0259eb94c75c18c4ba1c7c594bb25088
   m_configObjects:
