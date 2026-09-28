@@ -50,8 +50,14 @@ public class PlayerRangedCombat : MonoBehaviour
     [SerializeField] private float bookSpreadAngle = 25f;
     [SerializeField] private float bookLifetime = 0.5f;
 
-  
 
+    private AudioManager audioManager;
+
+
+    private void Start()
+    {
+        audioManager = FindAnyObjectByType<AudioManager>();
+    }
     private void Update()
     {
         UpdateFacingDirection();
@@ -65,6 +71,7 @@ public class PlayerRangedCombat : MonoBehaviour
     {
         if (n == 0) return;
 
+        audioManager.seleccionAudio(7);
         if (n == 1)
         {
             ChangeWeapon(RangedWeapon.Cerbatana);

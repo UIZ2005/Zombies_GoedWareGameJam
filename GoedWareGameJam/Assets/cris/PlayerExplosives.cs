@@ -33,6 +33,12 @@ public class PlayerExplosives : MonoBehaviour
     [SerializeField] private float sopaCooldown = 6f;
 
     private float nextThrowTime;
+    private AudioManager audioManager;
+
+    private void Start()
+    {
+        audioManager = FindAnyObjectByType<AudioManager>();
+    }
 
     // =========================================
     // RECOGER ARMA (Conectado a la tecla 'C' o tu botón de Crouch)
@@ -45,7 +51,7 @@ public class PlayerExplosives : MonoBehaviour
     private void UpdateExplosiveSelection(int n)
     {
         if (n == 0) return; // Si no hay nada cerca, no hace nada
-
+        audioManager.seleccionAudio(7);
         if (n == 1) ChangeExplosive(ExplosiveType.Botella);
         if (n == 2) ChangeExplosive(ExplosiveType.Mochila);
         if (n == 3) ChangeExplosive(ExplosiveType.Sopa);

@@ -2032,7 +2032,7 @@ MonoBehaviour:
   vidasMaximas: 3
   spawner: {fileID: 1738664249}
   audioSource: {fileID: 744130932}
-  popCorazon: {fileID: 8300000, guid: a07c911806d0abc4d8f1437705ccf685, type: 3}
+  popCorazon: {fileID: 8300000, guid: 36d350a5d50b93e40b6af57da89fb582, type: 3}
   corazones:
   - {fileID: 1130506166}
   - {fileID: 641078630}
@@ -67445,6 +67445,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5d336c15dec283047899d50fe48d4261, type: 3}
   - {fileID: 8300000, guid: d0bb5e627432d704b80e6c0148c280bb, type: 3}
   - {fileID: 8300000, guid: 27ebe2ea3c4cf9b449a612fc05a25ddc, type: 3}
+  - {fileID: 8300000, guid: 9ab3a003087d88d4cb4a03a04995fdb0, type: 3}
+  - {fileID: 8300000, guid: 7da5c8f168c610046832ba78fd22840a, type: 3}
+  - {fileID: 8300000, guid: a07c911806d0abc4d8f1437705ccf685, type: 3}
 --- !u!4 &1300442193
 Transform:
   m_ObjectHideFlags: 0

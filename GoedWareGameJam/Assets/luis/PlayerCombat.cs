@@ -53,9 +53,10 @@ public class PlayerCombat : MonoBehaviour
 
     private Vector2 facingDirection = Vector2.down;
     private float nextAttackTime;
-
+    private AudioManager audioManager;
     private void Awake()
     {
+        audioManager = FindAnyObjectByType<AudioManager>();
         armas.Add(WeaponType.Regla, armasGO[0]);
         armas.Add(WeaponType.Tijeras, armasGO[1]);
         armas.Add(WeaponType.Compas, armasGO[2]);
@@ -63,7 +64,6 @@ public class PlayerCombat : MonoBehaviour
     public void OnInteract(InputValue value)
     {
         TryAttack();
-        Debug.Log("pressE");
     }
     // =========================================
     // SELECCIÓN DE ARMAS
@@ -76,6 +76,7 @@ public class PlayerCombat : MonoBehaviour
     private void UpdateWeaponSelection(int n)
     {
         if (n == 0) return;
+        audioManager.seleccionAudio(7);
 
         if (n==1)
         {
@@ -147,7 +148,7 @@ public class PlayerCombat : MonoBehaviour
         if (Time.time < nextAttackTime)
             return;
 
-        
+        audioManager.seleccionAudio(6);
         switch (currentWeapon)
         {
             case WeaponType.Regla:

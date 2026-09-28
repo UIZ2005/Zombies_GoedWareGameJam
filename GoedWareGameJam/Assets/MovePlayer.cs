@@ -14,9 +14,12 @@ public class MovePlayer : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private SpriteRenderer spriteRenderer;
 
+    private AudioManager audioManager;
+
     
     private void Awake()
     {
+        audioManager = FindAnyObjectByType<AudioManager>();
         rb = GetComponent<Rigidbody2D>();
 
         if (animator == null)
@@ -53,7 +56,7 @@ public class MovePlayer : MonoBehaviour
                 animator.SetFloat("XInput", movement.x);
                 animator.SetFloat("YInput", movement.y);
             }
-            
+            audioManager.seleccionAudio(5);
         }
     }
 
