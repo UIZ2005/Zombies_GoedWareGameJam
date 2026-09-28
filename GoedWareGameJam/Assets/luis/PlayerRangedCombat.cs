@@ -158,6 +158,7 @@ public class PlayerRangedCombat : MonoBehaviour
     {
         if (currentWeapon == RangedWeapon.Ninguno) return;
 
+        audioManager.seleccionAudio(8);
         switch (currentWeapon)
         {
             case RangedWeapon.Cerbatana:
