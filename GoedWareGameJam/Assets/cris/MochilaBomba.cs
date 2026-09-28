@@ -15,9 +15,11 @@ public class MochilaBomba : MonoBehaviour
 
     private Animator anim;
     private CircleCollider2D areaColision;
+    private AudioManager audioManager;
 
     private void Awake()
     {
+        audioManager = FindAnyObjectByType<AudioManager>();
         anim = GetComponent<Animator>();
         areaColision = GetComponent<CircleCollider2D>();
         
@@ -35,7 +37,7 @@ public class MochilaBomba : MonoBehaviour
 
         // 2. Disparamos la animación de explosión (Asegúrate de tener un Trigger "Explotar" en tu Animator)
         anim.SetTrigger("Explotar");
-        
+        audioManager.seleccionAudio(9);
         // 3. Aumentamos la escala para la explosión visual
         transform.localScale = transform.localScale * multiplicadorEscala;
 

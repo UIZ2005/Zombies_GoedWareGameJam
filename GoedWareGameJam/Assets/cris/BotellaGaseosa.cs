@@ -22,9 +22,11 @@ public class BotellaGaseosa : MonoBehaviour
     private Animator anim;
     private SpriteRenderer spriteRenderer;
     private CircleCollider2D areaColision;
+    private AudioManager audioManager;
 
     private void Awake()
     {
+        audioManager = FindAnyObjectByType<AudioManager>();
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         areaColision = GetComponent<CircleCollider2D>();
@@ -59,8 +61,9 @@ public class BotellaGaseosa : MonoBehaviour
         estaEnVuelo = false;
         
         // 1. Disparamos la animación de explosión
-        anim.SetTrigger("Explotar"); 
-        
+        anim.SetTrigger("Explotar");
+        audioManager.seleccionAudio(10);
+
         // 2. Duplicamos la escala de la botella/nube
         transform.localScale = transform.localScale * 6f;
         
