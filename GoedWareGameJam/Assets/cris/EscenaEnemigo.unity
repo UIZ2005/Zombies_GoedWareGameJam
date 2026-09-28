@@ -48422,6 +48422,22 @@ PrefabInstance:
       propertyPath: enemyTypes.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1686490541661540818, guid: fc1931638f87b1042b93818227cffc27, type: 3}
+      propertyPath: reglaRange
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686490541661540818, guid: fc1931638f87b1042b93818227cffc27, type: 3}
+      propertyPath: compasRange
+      value: 3.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686490541661540818, guid: fc1931638f87b1042b93818227cffc27, type: 3}
+      propertyPath: tijerasRange
+      value: 2.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686490541661540818, guid: fc1931638f87b1042b93818227cffc27, type: 3}
+      propertyPath: currentWeapon
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2016108131188633869, guid: fc1931638f87b1042b93818227cffc27, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -64679,7 +64695,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1253930371
 Transform:
   m_ObjectHideFlags: 0
