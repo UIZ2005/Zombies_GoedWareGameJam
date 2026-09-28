@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BotellaGaseosa
   velocidadLanzamiento: 15
-  "da\xF1oPorTick": 15
+  "da\xF1oPorTick": 30
   knockback: 2
   tiempoVidaNube: 6
   tiempoFade: 2

@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SopaHirviendo
   velocidadLanzamiento: 12
-  "da\xF1oPorTick": 20
+  "da\xF1oPorTick": 30
   knockback: 0
   tiempoVidaFuego: 5
   tiempoFade: 1.5
