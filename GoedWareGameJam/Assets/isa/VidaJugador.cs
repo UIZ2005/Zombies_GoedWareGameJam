@@ -8,6 +8,7 @@ public class VidaJugador : MonoBehaviour
 {
     public int vidasMaximas = 3;
     private int vidasActuales;
+    public GameObject spawner;
 
     public AudioSource audioSource;
     public AudioClip popCorazon;
@@ -115,6 +116,7 @@ public class VidaJugador : MonoBehaviour
         gameObject.GetComponent<PlayerCombat>().enabled = false;
         gameObject.GetComponent<PlayerExplosives>().enabled = false;
         gameObject.GetComponent<PlayerRangedCombat>().desativeweapon();
+        spawner.SetActive(false);
         gameObject.GetComponent<PlayerRangedCombat>().enabled = false;
 
         Debug.Log("murio");

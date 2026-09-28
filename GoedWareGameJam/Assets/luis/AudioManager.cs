@@ -12,6 +12,7 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     public void seleccionAudio(int Indice)
     {
+        if (audios[Indice] != null)
         AudioSource.PlayOneShot(audios[Indice]);
     }
     public void pausaAudio()

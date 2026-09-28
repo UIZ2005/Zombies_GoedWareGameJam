@@ -19,7 +19,7 @@ public class RangedProjectile : MonoBehaviour
     }
     private void Start()
     {
-        Destroy(gameObject, 2f);
+        Destroy(gameObject, 1f);
     }
     public void Initialize(
         Vector2 direction,
@@ -45,6 +45,11 @@ public class RangedProjectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
+        if (collision.CompareTag("Paredes"))
+        {
+            Destroy(gameObject);
+        }
         EnemyHealth enemy =
             collision.GetComponent<EnemyHealth>();
 

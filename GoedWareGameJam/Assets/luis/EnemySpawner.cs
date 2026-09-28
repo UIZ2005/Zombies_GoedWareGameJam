@@ -18,6 +18,7 @@ public class EnemySpawner : MonoBehaviour
 
     [Header("Tipos de enemigos")]
     [SerializeField] private EnemyType[] enemyTypes = new EnemyType[3];
+    private EnemyType currentenemi;
 
     [Header("Configuración del Spawn")]
     [SerializeField] private float spawnInterval = 2f;
@@ -69,11 +70,16 @@ public class EnemySpawner : MonoBehaviour
 
         Vector2 spawnPosition = GetSpawnPosition();
 
-        Instantiate(
+        GameObject enemy=Instantiate(
             selectedPrefab,
             spawnPosition,
             Quaternion.identity
         );
+
+        if (currentenemi.enemyName == "Flaco")
+        {
+            enemy.transform.localScale = Vector3.one * 0.12f;
+        }
     }
 
     private GameObject SelectEnemy()
@@ -107,6 +113,7 @@ public class EnemySpawner : MonoBehaviour
             randomValue -= enemy.spawnWeight;
 
             if (randomValue <= 0f)
+                currentenemi = enemy;
                 return enemy.prefab;
         }
 
